@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@500&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+
+:root {
+  --main-clr: #f06c2c;
+  --sec-clr: #09912018;
+  --yellow: #f8b042;
+  --third-clr: #fffefa6e;
+  --gradiant: linear-gradient(#f06c2c, #f3b7ad);
+  --font-edu: "Edu AU VIC WA NT Arrows", cursive;
+  --font-bangla: "Hind Siliguri", sans-serif;
+  --font-moven: "Maven Pro", sans-serif;
+  --light-bg: #deedeab2;
+}
+
+* {
+  outline: none;
+  font-weight: normal;
+  font-family: var(--font-moven);
+  box-shadow: none;
+  font-size: 18px;
+}
+
+/* navigaion bar start */
+
+#navigation {
+  background-color: rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(5px);
+}
+
+.btn {
+  box-shadow: none !important;
+}
+
+.navbar-brand #logo {
+  width: 140px;
+}
+
+#search_input {
+  background-color: transparent;
+  border: 1px solid var(--main-clr);
+  outline: none;
+  height: 40px;
+}
+
+#search_input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#search_btn {
+  display: flex;
+  height: 40px;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  font-weight: 700;
+}
+
+#search_btn > i {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+}
+
+#search_btn:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+}
+
+#mynavbar .nav-link {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* navigaion bar end */
+
+
+/* instructors section start */
+
+#instructors {
+  background-color: #f2f5f8;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+#instructors .banner {
+  background: url(../asset/pngegg\ \(1\).png);
+  backdrop-filter: brightness(0.9);
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#instructors .banner h2 {
+  font-family: var(--font-edu) !important;
+  font-size: 2.5rem;
+}
+
+/* instructors section end */
+
+.ins-card {
+  position: relative;
+  max-width: 100%;
+  max-height: 350px;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.ins-card2 {
+  background: linear-gradient(-45deg, #C6FFDD 0%, #f7797d 100% );
+}
+.ins-card3 {
+  background: linear-gradient(-45deg, #009FFF 0%, #ec2F4B 100% );
+}
+.ins-card4 {
+  background: linear-gradient(-45deg, #005AA7 0%, #FFFDE4 100% );
+}
+.ins-card5 {
+  background: linear-gradient(-45deg, #DA4453 0%, #89216B 100% );
+}
+.ins-card6 {
+  background: linear-gradient(-45deg, #11998e 0%, #38ef7d 100% );
+}
+.ins-card7 {
+  background: linear-gradient(-45deg, #a8c0ff 0%, #3f2b96 100% );
+}
+.ins-card8 {
+  background: linear-gradient(-45deg, #00F260 0%, #0575E6 100% );
+}
+
+
+.ins-card:hover {
+  transform: rotate(-2deg) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 98%;
+  height: 98%;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.61);
+  backdrop-filter: brightness(0.8);
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.ins-card:hover .card__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: black;
+  font-weight: 700;
+}
+
+.card__description {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: black;
+  line-height: 1.4;
+}

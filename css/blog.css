@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@500&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+
+:root {
+  --main-clr: #f06c2c;
+  --sec-clr: #09912018;
+  --yellow: #f8b042;
+  --third-clr: #fffefa6e;
+  --gradiant: linear-gradient(#f06c2c, #f3b7ad);
+  --font-edu: "Edu AU VIC WA NT Arrows", cursive;
+  --font-bangla: "Hind Siliguri", sans-serif;
+  --font-moven: "Maven Pro", sans-serif;
+  --light-bg: #deedeab2;
+}
+
+* {
+  outline: none;
+  font-weight: normal;
+  font-family: var(--font-moven);
+  box-shadow: none;
+  font-size: 18px;
+}
+
+
+/* navigaion bar start */
+
+#navigation {
+  background-color: rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(5px);
+}
+
+.btn {
+  box-shadow: none !important;
+}
+
+.navbar-brand #logo {
+  width: 140px;
+}
+
+#search_input {
+  background-color: transparent;
+  border: 1px solid var(--main-clr);
+  outline: none;
+  height: 40px;
+}
+
+#search_input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#search_btn {
+  display: flex;
+  height: 40px;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  font-weight: 700;
+}
+
+#search_btn > i {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+}
+
+#search_btn:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+}
+
+#mynavbar .nav-link {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* navigaion bar end */
+
+
+/* ========blog page start=========== */
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url(../asset/contact_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(2px);
+  z-index: -999;
+}
+
+#blog {
+  min-height: 100vh;
+  background-color: whitesmoke;
+  padding: 1.5rem 0;
+}
+
+.post-card {
+  box-sizing: border-box;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.5s;
+  user-select: none;
+  color: black;
+  padding: 1rem .5rem;
+}
+
+.post-card:hover {
+  border: 1px solid black;
+  transform: scale(1.02);
+}
+
+.post-card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.post-card .box-title {
+  font-family: var(--font-bangla);
+}
+
+.pagination .page-link{
+  box-shadow: none;
+}
+
+/* recent section */
+#recent .recent-link {
+  font-size: 14px;
+  text-align: left;
+  margin-top: 5px;
+}
+
+
+/* contact us section */
+
+#contact_us {
+  min-height: 40vh;
+  backdrop-filter: brightness(.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact_us .contact-title {
+  font-family: var(--font-edu);
+}
