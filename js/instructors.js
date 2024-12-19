@@ -36,6 +36,12 @@ ScrollReveal().reveal(".navbar form", {
      opacity: 0,
      scale : .5,
  });
+ ScrollReveal().reveal("#instructors .ins_title", {
+     ...scrollRevealOption,
+     origin: 'left',
+     opacity: 0,
+     scale : .5,
+ });
  ScrollReveal().reveal("#instructors .ins_1", {
      ...scrollRevealOption,
      origin: 'left',
@@ -76,28 +82,27 @@ ScrollReveal().reveal(".navbar form", {
      origin: 'left',
      opacity: 0,
      scale : .5,
-     delay: 2000,
+     delay: 2300,
  });
  ScrollReveal().reveal("#instructors .ins_7", {
      ...scrollRevealOption,
      origin: 'left',
      opacity: 0,
      scale : .5,
-     delay: 2300,
+     delay: 2600,
  });
  ScrollReveal().reveal("#instructors .ins_8", {
      ...scrollRevealOption,
      origin: 'left',
      opacity: 0,
      scale : .5,
-     delay: 2600,
+     delay: 2900,
  });
  ScrollReveal().reveal("#instructors .pagination", {
      ...scrollRevealOption,
      origin: 'left',
      opacity: 0,
      scale : .5,
-     delay: 2800,
  });
 
 //  others section

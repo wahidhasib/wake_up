@@ -89,6 +89,7 @@
 
 /* navigaion bar end */
 
+
 /* ============footer section start============= */
 
 #footer{
@@ -139,82 +140,30 @@
 /* ============footer section end============= */
 
 
+/* instructors section start */
 
-/* ========blog page start=========== */
-body {
-  position: relative;
+#instructors {
+  background-color: #f8f8f8;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 2rem;
 }
 
-body::before {
-  content: "";
-  height: 100%;
+#instructors .banner {
+  background: url(../asset/pngegg\ \(1\).png);
+  backdrop-filter: brightness(0.9);
   width: 100%;
-  position: absolute;
-  background: url(../asset/contact_bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  filter: blur(2px);
-  z-index: -999;
-}
-
-#blog {
-  min-height: 100vh;
-  background-color: whitesmoke;
-  padding: 1.5rem 0;
-}
-
-.post-card {
-  box-sizing: border-box;
-  background: rgba(217, 217, 217, 0.58);
-  border: 1px solid white;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(6px);
-  border-radius: 12px;
-  cursor: pointer;
-  transition: all 0.5s;
-  user-select: none;
-  color: black;
-  padding: 1rem .5rem;
-}
-
-.post-card:hover {
-  border: 1px solid black;
-  transform: scale(1.02);
-}
-
-.post-card:active {
-  transform: scale(0.95) rotateZ(1.7deg);
-}
-
-.post-card .box-title {
-  font-family: var(--font-bangla);
-}
-
-.pagination .page-link{
-  box-shadow: none;
-}
-
-/* recent section */
-#recent .recent-link {
-  font-size: 14px;
-  text-align: left;
-  margin-top: 5px;
-}
-
-
-/* contact us section */
-
-#contact_us {
   min-height: 40vh;
-  backdrop-filter: brightness(.5);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#contact_us .contact-title {
-  font-family: var(--font-edu);
+#instructors .banner h2 {
+  font-family: var(--font-edu) !important;
+  font-size: 3rem;
 }
+
+/* instructors section end */

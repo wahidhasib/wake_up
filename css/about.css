@@ -24,7 +24,6 @@
   font-size: 18px;
 }
 
-
 /* navigaion bar start */
 
 #navigation {
@@ -84,7 +83,61 @@
   letter-spacing: 1px;
 }
 
+#mynavbar .nav-link.active {
+  color: var(--main-clr);
+}
+
 /* navigaion bar end */
+
+/* ============footer section start============= */
+
+#footer{
+  min-height: 25vh;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  background-color: #192732;
+}
+
+#footer .f_logo {
+  max-width: 140px;
+}
+
+#footer .social-links a{
+  color: #ddd;
+  border: 1px solid #ddd;
+  transition: 0.4s ease-in-out;
+  text-decoration: none;
+  padding: 8px;
+  margin-left: 5px;
+  border-radius: 4px;
+}
+
+.social-links i {
+  font-size: 1.2rem;
+}
+
+#footer .social-links a:hover {
+  background-color: var(--light-bg);
+  color: #000000;
+}
+
+#footer .info-link a{
+  position: relative;
+  transition: 0.3s ease-in-out;
+  color: #ddd !important;
+  font-weight: normal;
+  display: block;
+}
+
+#footer .info-link:hover a{
+  margin-left: 10px;
+  font-weight: 600 !important;
+  color: var(--main-clr) !important;
+}
+
+/* ============footer section end============= */
+
 
 /* ============hero section start=================== */
 
