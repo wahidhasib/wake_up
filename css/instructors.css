@@ -101,7 +101,7 @@
   background: url(../asset/pngegg\ \(1\).png);
   backdrop-filter: brightness(0.9);
   width: 100%;
-  min-height: 20vh;
+  min-height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,7 +109,7 @@
 
 #instructors .banner h2 {
   font-family: var(--font-edu) !important;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 /* instructors section end */

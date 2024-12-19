@@ -389,7 +389,7 @@
 }
 
 #comunity .comunity-img {
-  max-height: 500px;
+  min-height: 500px;
   max-width: 800px;
   object-fit: cover;
   filter: brightness(0.8);

@@ -63,35 +63,35 @@ ScrollReveal().reveal(".info2", {
     origin: 'left',
     opacity: 0,
     scale: 1.5,
-    delay: 1000,
+    delay: 800,
 });
 ScrollReveal().reveal(".info3", {
     ...scrollRevealOption,
     origin: 'left',
     opacity: 0,
     scale: 1.5,
-    delay: 1500,
+    delay: 1100,
 });
 ScrollReveal().reveal(".info4", {
     ...scrollRevealOption,
     origin: 'left',
     opacity: 0,
     scale: 1.5,
-    delay: 2000,
+    delay: 500,
 });
 ScrollReveal().reveal(".info5", {
     ...scrollRevealOption,
     origin: 'left',
     opacity: 0,
     scale: 1.5,
-    delay: 2500,
+    delay: 800,
 });
 ScrollReveal().reveal(".info6", {
     ...scrollRevealOption,
     origin: 'left',
     opacity: 0,
     scale: 1.5,
-    delay: 3000,
+    delay: 1100,
 });
 
 
@@ -104,80 +104,78 @@ ScrollReveal().reveal(".spec1", {
     scale: 1.5,
     delay: 500,
 });
-ScrollReveal().reveal(".card-item2", {
+ScrollReveal().reveal(".spec2", {
     ...scrollRevealOption,
     origin: 'left',
     opacity: 0,
     scale: 1.5,
-    delay: 1000,
+    delay: 800,
 });
 ScrollReveal().reveal(".spec3", {
     ...scrollRevealOption,
     origin: 'left',
     opacity: 0,
     scale: 1.5,
-    delay: 1500,
+    delay: 1100,
 });
 ScrollReveal().reveal(".spec4", {
     ...scrollRevealOption,
     origin: 'left',
     opacity: 0,
     scale: 1.5,
-    delay: 2000,
+    delay: 1400,
 });
 ScrollReveal().reveal(".spec5", {
     ...scrollRevealOption,
     origin: 'left',
     opacity: 0,
     scale: 1.5,
-    delay: 500,
 });
 ScrollReveal().reveal(".spec6", {
     ...scrollRevealOption,
     origin: 'left',
     opacity: 0,
     scale: 1.5,
-    delay: 1000,
+    delay: 300,
 });
 ScrollReveal().reveal(".spec7", {
     ...scrollRevealOption,
     origin: 'left',
     opacity: 0,
     scale: 1.5,
-    delay: 1500,
+    delay: 600,
 });
 ScrollReveal().reveal(".spec8", {
     ...scrollRevealOption,
     origin: 'left',
     opacity: 0,
     scale: 1.5,
-    delay: 2000,
+    delay: 900,
 });
 ScrollReveal().reveal(".spec9", {
     ...scrollRevealOption,
     origin: 'left',
     opacity: 0,
     scale: 1.5,
-    delay: 500,
 });
 ScrollReveal().reveal(".spec10", {
     ...scrollRevealOption,
     origin: 'left',
     opacity: 0,
     scale: 1.5,
-    delay: 1000,
+    delay: 300,
 });
 ScrollReveal().reveal(".spec11", {
     ...scrollRevealOption,
     origin: 'left',
     opacity: 0,
     scale: 1.5,
-    delay: 1500,
+    delay: 600,
 });
 ScrollReveal().reveal(".spec12", {
     ...scrollRevealOption,
     origin: 'left',
     opacity: 0,
     scale: 1.5,
-    delay: 2000,
+    delay: 900,
 });
