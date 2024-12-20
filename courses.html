@@ -60,11 +60,10 @@
         </nav>
         <!-- Navbar end -->
         <section id="courses">
-            <div class="container m-0 p-0">
+            <div class="container">
                 <div class="row p-0 m-0">
                     <div class="col-md-12 p-0 m-0 video_sec">
-                        add a video which with will be 100%
-                        <video src="asset/video.mp4"></video>
+                        <iframe class="main-video" src="https://www.youtube.com/embed/PYSixNNK98U?si=kAF8NdGTtKuBDUxd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -396,24 +395,100 @@
 
             <!-- FAQ section start -->
 
-            <div class="container py-5 bg-body">
-                <div class="row align-items-center">
-                    <div class="col-md-5 d-flex justify-content-center">
-                        <img src="asset/faq.png" alt="" class="mw-100">
-                    </div>
-                    <div class="col-md-7">
-                        <h4>The right answer at the right time can make all the difference. Explore our FAQs to find what you need, quickly and easily</h3>
-                        <details>
-                            <summary>Whsf</summary>
-                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum et ullam minima consequuntur, ratione repellendus eaque. Nisi cum modi, voluptatibus corporis cupiditate adipisci temporibus, suscipit eum quibusdam sit sapiente corrupti.</p>
-                        </details>
-                        <details>
-                            <summary>আমার প্রশ্নের উত্তর এখানে নেই। কোথায় প্রশ্ন করবো?</summary>
-                            <p class="">আপনি চাইলে আপনার প্রশ্নটি বিস্তারিত লিখে এবং প্রয়োজনীয় রেফারেন্স যুক্ত করে আমাদের ফেসবুক পেজে ইনবক্স করতে পারেন অথবা পাবলিক গ্রুপে পোস্ট করতে পারেন। এছাড়াও আপনার জন্য আমাদের সাপোর্ট সেন্টার এর নাম্বার - +8801325888939 সকাল 10:00 টা থেকে রাত 10:00 টা পর্যন্ত খোলা থাকবে।</p>
-                        </details>
+            <section id="faq_section">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 shadow-lg p-2 p-md-0 rounded">
+                            <h4 class="fw-bold m-2">Answers to Your Most Asked Questions</h4>
+                            <div class="accordion" id="faqAccordion">
+                                <!-- General Questions -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingGeneral1">
+                                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGeneral1" aria-expanded="true" aria-controls="collapseGeneral1">
+                                            What is this website about?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseGeneral1" class="accordion-collapse collapse show" aria-labelledby="headingGeneral1" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-secondary fw-bold">
+                                            Our website is a platform for buying and selling online courses across various subjects and skill levels.
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingGeneral2">
+                                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGeneral2" aria-expanded="false" aria-controls="collapseGeneral2">
+                                            Who is this website for?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseGeneral2" class="accordion-collapse collapse" aria-labelledby="headingGeneral2" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-secondary fw-bold">
+                                            This website is designed for learners of all ages and backgrounds who want to gain new skills, as well as instructors looking to share their knowledge and monetize their expertise.
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Account and Registration -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingAccount1">
+                                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAccount1 " aria-expanded="false" aria-controls="collapseAccount1">
+                                            How do I create an account?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseAccount1" class="accordion-collapse collapse" aria-labelledby="headingAccount1" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-secondary fw-bold">
+                                            Click on the "Sign Up" button on the top right corner of the homepage, fill out the form, and follow the instructions in the confirmation email.
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Courses and Features -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingCourses1">
+                                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCourses1" aria-expanded="false" aria-controls="collapseCourses1">
+                                            What types of courses are available?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseCourses1" class="accordion-collapse collapse" aria-labelledby="headingCourses1" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-secondary fw-bold">
+                                            We offer a wide range of courses, including technology, business, personal development, arts, and more. Browse our catalog to find the perfect course for your needs.
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Technical Support -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTech1">
+                                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTech1" aria-expanded="false" aria-controls="collapseTech1">
+                                            The website isn’t loading properly. What should I do?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTech1" class="accordion-collapse collapse" aria-labelledby="headingTech1" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body fw-bold text-secondary">
+                                            If you’re experiencing technical issues, try clearing your browser cache, using a different browser, or checking your internet connection. If the issue persists, contact us at [support email address].
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Policies and Security -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingPolicy1">
+                                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePolicy1" aria-expanded="false" aria-controls="collapsePolicy1">
+                                            How is my data protected?
+                                        </button>
+                                    </h2>
+                                    <div id="collapsePolicy1" class="accordion-collapse collapse" aria-labelledby="headingPolicy1" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body fw-bold text-secondary">
+                                            We take your privacy and security seriously. Please read our Privacy Policy to understand how we handle your data.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- FAQ section end -->
         </section>

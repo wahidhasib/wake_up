@@ -30,6 +30,12 @@ ScrollReveal().reveal(".navbar form", {
 
 // header animation end
  
+ ScrollReveal().reveal("#blog .title", {
+     ...scrollRevealOption,
+     origin: 'left',
+     opacity: 0,
+     scale : .5,
+ });
  ScrollReveal().reveal("#blog .card-1", {
      ...scrollRevealOption,
      origin: 'left',

@@ -177,7 +177,7 @@ body::before {
   transition: all 0.5s;
   user-select: none;
   color: black;
-  padding: 1rem .5rem;
+  overflow: hidden;
 }
 
 .post-card:hover {
