@@ -140,6 +140,33 @@
 } */
 
 
+.caro-img {
+  height: 60vh;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.c-name {
+  color: var(--main-clr);
+  font-size: 1.2rem;
+  text-shadow: 0 0 5px black;
+}
+
+.discount {
+  color: var(--main-clr);
+  text-shadow: 0 0 5px black;
+}
+
+.carousel-indicators button{
+  height: 10px !important;
+  width: 10px !important;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active{
+  background-color: var(--main-clr) !important;
+}
 
 /* ============hero section end=================== */
 
@@ -631,6 +658,26 @@
 }
 
 /* blog section end */
+
+/* =======faq section start======== */
+
+.accordion-button {
+  box-shadow: none !important;
+}
+
+#faq_section {
+  min-height: 50vh;
+  background-color: #F5EFFF;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+ }
+
+ #faq_section img {
+  max-width: 100%;
+ }
+
+ /* =======faq section end======== */
 
 /* =============contact section start================= */
 

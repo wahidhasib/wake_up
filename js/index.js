@@ -54,17 +54,11 @@ ScrollReveal().reveal(".navbar form", {
 
 
 
-ScrollReveal().reveal("#hero .hero_title", {
+ScrollReveal().reveal("#carouselExampleCaptions", {
     ...scrollRevealOption,
-    origin: 'left',
+    origin: 'top',
     opacity: 0,
     delay : 200,
-});
-ScrollReveal().reveal("#hero .hero_sub", {
-    ...scrollRevealOption,
-    origin: 'right',
-    opacity: 0,
-    delay : 700,
 });
 
 // feature section

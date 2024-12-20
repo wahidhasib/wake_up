@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@500&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+
+:root {
+  --main-clr: #f06c2c;
+  --sec-clr: #09912018;
+  --yellow: #f8b042;
+  --third-clr: #fffefa6e;
+  --gradiant: linear-gradient(#f06c2c, #f3b7ad);
+  --font-edu: "Edu AU VIC WA NT Arrows", cursive;
+  --font-bangla: "Hind Siliguri", sans-serif;
+  --font-moven: "Maven Pro", sans-serif;
+  --light-bg: #deedeab2;
+}
+
+* {
+  outline: none;
+  font-weight: normal;
+  font-family: var(--font-moven);
+  box-shadow: none;
+  font-size: 18px;
+}
+
+/* navigaion bar start */
+
+#navigation {
+  background-color: rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(5px);
+}
+
+.btn {
+  box-shadow: none !important;
+}
+
+.navbar-brand #logo {
+  width: 140px;
+}
+
+#search_input {
+  background-color: transparent;
+  border: 1px solid var(--main-clr);
+  outline: none;
+  height: 40px;
+}
+
+#search_input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#search_btn {
+  display: flex;
+  height: 40px;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  font-weight: 700;
+}
+
+#search_btn > i {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+}
+
+#search_btn:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+}
+
+#mynavbar .nav-link {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#mynavbar .nav-link.active {
+  color: var(--main-clr);
+}
+
+/* navigaion bar end */
+
+/* ============footer section start============= */
+
+#footer{
+  min-height: 25vh;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  background-color: #192732;
+}
+
+#footer .f_logo {
+  max-width: 140px;
+}
+
+#footer .social-links a{
+  color: #ddd;
+  border: 1px solid #ddd;
+  transition: 0.4s ease-in-out;
+  text-decoration: none;
+  padding: 8px;
+  margin-left: 5px;
+  border-radius: 4px;
+}
+
+.social-links i {
+  font-size: 1.2rem;
+}
+
+#footer .social-links a:hover {
+  background-color: var(--light-bg);
+  color: #000000;
+}
+
+#footer .info-link a{
+  position: relative;
+  transition: 0.3s ease-in-out;
+  color: #ddd !important;
+  font-weight: normal;
+  display: block;
+}
+
+#footer .info-link:hover a{
+  margin-left: 10px;
+  font-weight: 600 !important;
+  color: var(--main-clr) !important;
+}
+
+/* ============footer section end============= */
+
+
+#blog_section {
+     min-height: 80vh;
+     background: linear-gradient(#f0f0f0, #E0EAFC);
+     display: flex;
+     align-items: center;
+}
+
+#blog_section .blog-image {
+     max-width: 100%;
+     max-height: 500px;
+     object-fit: cover;
+}
+
+
+/* suggetion blog section start */
+
+.post-card {
+     box-sizing: border-box;
+     background: rgba(217, 217, 217, 0.58);
+     border: 1px solid white;
+     box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+     backdrop-filter: blur(6px);
+     border-radius: 12px;
+     cursor: pointer;
+     transition: all 0.5s;
+     user-select: none;
+     color: black;
+     overflow: hidden;
+   }
+   
+   .post-card:hover {
+     border: 1px solid black;
+     transform: scale(1.02);
+   }
+   
+   .post-card:active {
+     transform: scale(0.95) rotateZ(1.7deg);
+   }
+   
+   .post-card .box-title {
+     font-family: var(--font-bangla);
+   }
+   
+   .pagination .page-link{
+     box-shadow: none;
+   }
+   
+   /* recent section */
+   #recent .recent-link {
+     font-size: 14px;
+     text-align: left;
+     margin-top: 5px;
+   }
+
+   .recent {
+     color: var(--main-clr);
+   }
+
+/* suggetion blog section end */

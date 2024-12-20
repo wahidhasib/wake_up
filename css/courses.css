@@ -242,7 +242,7 @@
   color: #fff;
 }
 
-.card2 {
+/* .card2 {
   display: block;
   top: 0px;
   position: relative;
@@ -364,9 +364,51 @@
 
 .card4:hover .go-arrow {
   opacity: 1;
+} */
+
+
+/* =========ki paben section ============ */
+
+#atchive_sec {
+  min-height: 60vh;
+  background: linear-gradient(#bdc3c7, #E2E2E2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#atchive_sec .highlight {
+  color: var(--main-clr);
+}
+
+#atchive_sec .atchive-title {
+  font-family: var(--font-bangla);
+  margin: 1rem 0;
 }
 
 
+.atchivement {
+  border: 4px solid #b1adad;
+  border-radius: 10px;
+  transition: 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.349);
+  backdrop-filter: blur(10px);
+  padding: .5rem;
+}
+
+.atchivement i {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: var(--main-clr);
+}
+
+.atchivement:hover {
+  border: 4px solid var(--main-clr);
+  box-shadow: 0 0 25px white;
+}
 
 /* course main card */
 
@@ -505,4 +547,8 @@
   display: flex;
   align-items: center;
   padding: 1rem 0;
+ }
+
+ #faq_section img {
+  max-width: 100%;
  }
