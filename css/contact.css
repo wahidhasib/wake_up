@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@500&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+
+:root {
+  --main-clr: #f06c2c;
+  --sec-clr: #09912018;
+  --yellow: #f8b042;
+  --third-clr: #fffefa6e;
+  --gradiant: linear-gradient(#f06c2c, #f3b7ad);
+  --font-edu: "Edu AU VIC WA NT Arrows", cursive;
+  --font-bangla: "Hind Siliguri", sans-serif;
+  --font-moven: "Maven Pro", sans-serif;
+  --light-bg: #deedeab2;
+}
+
+* {
+  outline: none;
+  font-weight: normal;
+  font-family: var(--font-moven);
+  box-shadow: none;
+  font-size: 18px;
+}
+
+/* navigaion bar start */
+
+#navigation {
+  background-color: rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(5px);
+}
+
+.btn {
+  box-shadow: none !important;
+}
+
+.navbar-brand #logo {
+  width: 140px;
+}
+
+#search_input {
+  background-color: transparent;
+  border: 1px solid var(--main-clr);
+  outline: none;
+  height: 40px;
+}
+
+#search_input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#search_btn {
+  display: flex;
+  height: 40px;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  font-weight: 700;
+}
+
+#search_btn > i {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+}
+
+#search_btn:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+}
+
+#mynavbar .nav-link {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#mynavbar .nav-link.active {
+  color: var(--main-clr);
+}
+
+.dropdown-btn {
+  background-color: transparent;
+  border: none;
+}
+/* navigaion bar end */
+
+/* ============footer section start============= */
+
+#footer{
+     min-height: 25vh;
+     padding: 1rem 0;
+     display: flex;
+     align-items: center;
+     background-color: #192732;
+   }
+   
+   #footer .f_logo {
+     max-width: 140px;
+   }
+   
+   #footer .social-links a{
+     color: #ddd;
+     border: 1px solid #ddd;
+     transition: 0.4s ease-in-out;
+     text-decoration: none;
+     padding: 8px;
+     margin-left: 5px;
+     border-radius: 4px;
+   }
+   
+   .social-links i {
+     font-size: 1.2rem;
+   }
+   
+   #footer .social-links a:hover {
+     background-color: var(--light-bg);
+     color: #000000;
+   }
+   
+   #footer .info-link a{
+     position: relative;
+     transition: 0.3s ease-in-out;
+     color: #ddd !important;
+     font-weight: normal;
+     display: block;
+   }
+   
+   #footer .info-link:hover a{
+     margin-left: 10px;
+     font-weight: 600 !important;
+     color: var(--main-clr) !important;
+   }
+   
+   /* ============footer section end============= */
+   
+   
+   /* =============contact section start================= */
+
+#contact{
+     min-height: 50vh;
+     display: flex;
+     align-items: center;
+     background-color: #FCF7F7;
+     padding: 1rem 0;
+   }
+   
+   #contact .contact-title {
+     background: linear-gradient(#F06C2C, blue);
+     -webkit-text-fill-color: transparent;
+     -webkit-background-clip: text;
+     font-weight: bold;
+   }
+   
+   .contact-card {
+     min-width: 190px;
+     height: 140px;
+     border-radius: 20px;
+     background: #f5f5f5;
+     position: relative;
+     border: 2px solid #c3c6ce;
+     transition: 0.5s ease-out;
+     overflow: visible;
+     padding: 1rem .5rem;
+   }
+   
+   .card-details {
+     color: black;
+     height: 100%;
+     gap: 0.5em;
+     display: grid;
+     place-content: center;
+   }
+   
+   .card-button {
+     transform: translate(-50%, 125%);
+     width: 60%;
+     border-radius: 1rem;
+     border: none;
+     background-color: var(--main-clr);
+     font-size: 1rem;
+     padding: 0.5rem 1rem;
+     position: absolute;
+     left: 50%;
+     bottom: 0;
+     opacity: 0;
+     transition: 0.3s ease-out;
+   }
+   
+   .text-body {
+     color: rgb(134, 134, 134);
+   }
+   
+   /*Text*/
+   .text-title i{
+     font-size: 1.5em;
+     font-weight: bold;
+   }
+   
+   /*Hover*/
+   .contact-card:hover {
+     border-color: var(--main-clr);
+     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+   .contact-card:hover .card-button {
+     transform: translate(-50%, 50%);
+     opacity: 1;
+   }
+   
+   /* =============contact section end================= */
+
+
+   /* FAQ section start */
+
+   .accordion-button {
+     box-shadow: none !important;
+   }
+
+   /* FAQ section end */
