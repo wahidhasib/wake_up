@@ -167,3 +167,28 @@
 }
 
 /* instructors section end */
+
+
+/* course video section start */
+
+#videos {
+  min-height: 100vh;
+  background: #dcdde1;
+  display: flex;
+  align-items: center;
+}
+
+.video-frame {
+  height: 100%;
+}
+
+#videos .suggest_video {
+  max-width: 100%;
+}
+
+#videos .main-video {
+  border: 2px solid var(--main-clr);
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--main-clr);
+}
+/* course video section end */

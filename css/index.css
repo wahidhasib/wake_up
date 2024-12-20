@@ -87,6 +87,10 @@
   color: var(--main-clr);
 }
 
+.dropdown-btn {
+  background-color: transparent;
+  border: none;
+}
 /* navigaion bar end */
 
 /* ============hero section start=================== */
