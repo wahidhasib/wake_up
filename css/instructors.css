@@ -166,6 +166,12 @@
   font-size: 3rem;
 }
 
+@media screen and (max-width: 768px) {
+  #instructors .banner h2 {
+    font-size: 2rem;
+  }
+}
+
 /* instructors section end */
 
 /* single card */
