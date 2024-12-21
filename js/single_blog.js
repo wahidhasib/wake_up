@@ -7,26 +7,26 @@ const scrollRevealOption = {
      opacity: 0,
  };
  
- ScrollReveal().reveal(".navbar #logo", {
+ ScrollReveal().reveal(".navbar ", {
      ...scrollRevealOption,
      origin: 'left',
      opacity: 0,
      scale : .5,
  });
- ScrollReveal().reveal(".navbar .navigation", {
-     ...scrollRevealOption,
-     origin: 'left',
-     opacity: 0,
-     scale : .5,
-     delay : 300,
- });
- ScrollReveal().reveal(".navbar form", {
-     ...scrollRevealOption,
-     origin: 'right',
-     opacity: 0,
-     scale : .5,
-     delay : 500,
- });
+//  ScrollReveal().reveal(".navbar .navigation", {
+//      ...scrollRevealOption,
+//      origin: 'left',
+//      opacity: 0,
+//      scale : .5,
+//      delay : 300,
+//  });
+//  ScrollReveal().reveal(".navbar form", {
+//      ...scrollRevealOption,
+//      origin: 'right',
+//      opacity: 0,
+//      scale : .5,
+//      delay : 500,
+//  });
  // header animation end
 
  
