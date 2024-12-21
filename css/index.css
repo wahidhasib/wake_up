@@ -147,6 +147,12 @@
   filter: brightness(0.7);
 }
 
+@media screen and (max-width: 576px) {
+  .caro-img {
+    height: 70vh;
+  }
+}
+
 .c-name {
   color: var(--main-clr);
   font-size: 1.2rem;
