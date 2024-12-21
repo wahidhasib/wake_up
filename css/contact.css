@@ -91,6 +91,11 @@
   background-color: transparent;
   border: none;
 }
+
+section {
+  padding: 2rem .5rem !important;
+}
+
 /* navigaion bar end */
 
 /* ============footer section start============= */
@@ -141,99 +146,132 @@
    }
    
    /* ============footer section end============= */
-   
-   
-   /* =============contact section start================= */
-
-#contact{
-     min-height: 50vh;
-     display: flex;
-     align-items: center;
-     background-color: #FCF7F7;
-     padding: 1rem 0;
-   }
-   
-   #contact .contact-title {
-     background: linear-gradient(#F06C2C, blue);
-     -webkit-text-fill-color: transparent;
-     -webkit-background-clip: text;
-     font-weight: bold;
-   }
-   
-   .contact-card {
-     min-width: 190px;
-     height: 140px;
-     border-radius: 20px;
-     background: #f5f5f5;
-     position: relative;
-     border: 2px solid #c3c6ce;
-     transition: 0.5s ease-out;
-     overflow: visible;
-     padding: 1rem .5rem;
-   }
-   
-   .card-details {
-     color: black;
-     height: 100%;
-     gap: 0.5em;
-     display: grid;
-     place-content: center;
-   }
-   
-   .card-button {
-     transform: translate(-50%, 125%);
-     width: 60%;
-     border-radius: 1rem;
-     border: none;
-     background-color: var(--main-clr);
-     font-size: 1rem;
-     padding: 0.5rem 1rem;
-     position: absolute;
-     left: 50%;
-     bottom: 0;
-     opacity: 0;
-     transition: 0.3s ease-out;
-   }
-   
-   .text-body {
-     color: rgb(134, 134, 134);
-   }
-   
-   /*Text*/
-   .text-title i{
-     font-size: 1.5em;
-     font-weight: bold;
-   }
-   
-   /*Hover*/
-   .contact-card:hover {
-     border-color: var(--main-clr);
-     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-   }
-   
-   .contact-card:hover .card-button {
-     transform: translate(-50%, 50%);
-     opacity: 1;
-   }
-   
-   /* =============contact section end================= */
 
 
-   /* FAQ section start */
+   /* ========== form submision page========start */
 
-   .accordion-button {
-     box-shadow: none !important;
-   }
+  #formSub {
+    background-color: #f2f5f5;
+    min-height: 50vh;
+    padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+  }
 
-   #faq_section {
-     min-height: 50vh;
-     background-color: #F5EFFF;
-     display: flex;
-     align-items: center;
-     padding: 1rem 0;
-    }
-    /* FAQ section end */
+  #formSub #get-touch {
+    background: linear-gradient(90deg, #f8f8f8 80%, #f06c2c 20%);
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.363);
+  }
 
+  .form-title {
+    font-weight: 600;
+    position: relative;
+    width: max-content;
+    letter-spacing: 2px;
+  }
+
+  .form-title span{
+    color: var(--main-clr);
+    font-weight: 700;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.377);
+  }
+
+  .form-title span::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    background-color: var(--main-clr);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    margin-left: 10px;
+  }
+
+  .name, .number, .email, .message {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border: 1px solid var(--main-clr);
+    border-radius: 4px;
+    height: 36px;
+    padding: .5rem;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 0 20px transparent;
+    background-color: #fff;
+  }
+
+  .name:focus, .number:focus, .email:focus, .message:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.363);
+  }
+
+  .message {
+    height: inherit;
+  }
+
+  .form-label {
+    box-shadow: none !important;
+  }
+
+  .submit-btn {
+    min-width: 150px;
+    height: 40px;
+    color: var(--main-clr);
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid var(--main-clr);
+    letter-spacing: 1px;
+    transition: 0.5s ease-in-out;
+    background-color: #fff;
+  }
+
+  .submit-btn:hover {
+    letter-spacing: 3px;
+    background-color: var(--main-clr);
+    color: #fff;
+  }
+
+  .info-sec {
+    background-color: #192732;
+    width: 80%;
+    border-radius: 10px;
+    border: 3px solid #dddddde1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.445);
+  }
+
+  .info-sec h4 {
+    color: var(--main-clr) !important;
+    letter-spacing: 3px;
+    font-weight: 600;
+  }
+
+  .info-card{
+    border-left: 2px solid var(--main-clr);
+    padding: 0 .5rem;
+  }
+
+  .info-card p {
+    position: relative;
+  }
+
+  .info-card p::before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--main-clr);
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+   /* ========== form submision page========end */
+   
+   
    /* support section start */
 
    #support {
