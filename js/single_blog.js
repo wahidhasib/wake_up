@@ -1,6 +1,7 @@
 //  scrolling animation format
 
 const scrollRevealOption = {
+    mobile: false,
      distance: '50px',
      origin: 'bottom',
      duration: 1000,

@@ -24,6 +24,7 @@ var swiper = new Swiper(".mySwiper", {
 //  scrolling animation format
 
 const scrollRevealOption = {
+    mobile: false,
     distance: '50px',
     origin: 'bottom',
     duration: 1000,
@@ -31,7 +32,6 @@ const scrollRevealOption = {
 };
 
 ScrollReveal().reveal(".navbar", {
-    mobile: false,
     ...scrollRevealOption,
     origin: 'left',
     opacity: 0,
