@@ -31,6 +31,7 @@ const scrollRevealOption = {
 };
 
 ScrollReveal().reveal(".navbar", {
+    mobile: false,
     ...scrollRevealOption,
     origin: 'left',
     opacity: 0,
