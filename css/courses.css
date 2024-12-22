@@ -152,6 +152,9 @@ section {
 .main-video {
   width: 100%;
   height: 30vh;
+  border: 4px solid var(--main-clr);
+  border-radius: 5px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.61);
 }
 
 @media screen and (min-width: 992px) {
