@@ -146,29 +146,29 @@ ScrollReveal().reveal("#instuctors .instuctors-title", {
     scale: 0.5,
     origin: "left",
 });
-ScrollReveal().reveal("#instuctors .tutor", {
+ScrollReveal().reveal("#instuctors .ins_1", {
     ...scrollRevealOption,
     opacity: 0,
     origin: "left",
     delay: 500,
 });
-ScrollReveal().reveal("#instuctors .tutor2", {
+ScrollReveal().reveal("#instuctors .ins_2", {
     ...scrollRevealOption,
     opacity: 0,
     origin: "left",
-    delay: 1000,
+    delay: 800,
 });
-ScrollReveal().reveal("#instuctors .tutor3", {
+ScrollReveal().reveal("#instuctors .ins_3", {
     ...scrollRevealOption,
     opacity: 0,
     origin: "left",
-    delay: 1500,
+    delay: 1100,
 });
-ScrollReveal().reveal("#instuctors .tutor4", {
+ScrollReveal().reveal("#instuctors .ins_4", {
     ...scrollRevealOption,
     opacity: 0,
     origin: "left",
-    delay: 2000,
+    delay: 1400,
 });
 
 // contact section
