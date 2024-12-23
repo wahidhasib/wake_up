@@ -1,138 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="font-awesome/css/all.min.css">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/contact.css">
-        <!-- scroll reveal cdn -->
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <!-- Link Swiper's CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <title>Wake Up Ict</title>
-    </head>
-    <body>
-        <!-- Navbar start -->
-        <nav class="navbar navbar-expand-md navbar-light px-lg-5 sticky-top" id="navigation">
-            <div class="container-fluid d-flex justify-content-between">
-                <a class="navbar-brand" href="index.html">
-                    <img src="asset/wict-logo.png" alt="" id="logo">
-                </a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#mynavbar"
-                >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- scroll reveal cdn -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Wake Up Ict</title>
+</head>
+
+<body>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-md navbar-light px-lg-5 sticky-top" id="navigation">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="index.html">
+                <img src="asset/wict-logo.png" alt="" id="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
-                    <ul class="navbar-nav ms-auto navigation">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="courses.html">Courses</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex ms-auto">
-                        <input
-                            class="form-control"
-                            type="text"
-                            placeholder="Search"
-                            id="search_input"
-                        >
-                        <button id="search_btn" type="submit">
+            <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
+                <ul class="navbar-nav ms-auto navigation">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto">
+                    <input class="form-control" type="text" placeholder="Search" id="search_input">
+                    <button id="search_btn" type="submit">
                             <i class="fa-brands fa-searchengin"></i>
                             <span>Search</span>
                         </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Contact section start -->
+
+    <section id="formSub" class="p-1 py-3">
+        <div class="container" id="get-touch">
+            <div class="row">
+                <div class="col-lg-7 mt-2">
+                    <h2 class="form-title">Contact <span class="h2">Us</span></h2>
+                    <p class="fs-5">Get in Touch with Us for Your Queries and Support!</p>
+                    <form action="#" class="form" type="post">
+                        <div class="row mb-2">
+                            <div class="col-md-6 mb-2">
+                                <input type="text" name="" placeholder="Enter your Name" class="name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="" placeholder="Enter phone number" class="number">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-12">
+                                <input type="email" name="" placeholder="Enter your E-mail Address" class="email">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-12">
+                                <textarea name="" id="" placeholder="Enter your message!!!" class="message mb-1" rows="4"></textarea>
+                                <label for="image" class="form-label">Select an Image</label>
+                                <input type="file" class="form-control" id="image">
+                            </div>
+                        </div>
+                        <input type="submit" name="submit" id="submit" class="submit-btn" value="Submit">
                     </form>
                 </div>
-            </div>
-        </nav>
-        <!-- Navbar end -->
-
-        <!-- Contact section start -->
-        
-        <section id="formSub" class="p-1 py-3">
-            <div class="container" id="get-touch">
-                <div class="row">
-                    <div class="col-lg-7 mt-2">
-                        <h2 class="form-title">Contact <span class="h2">Us</span></h2>
-                        <p class="fs-5">Get in Touch with Us for Your Queries and Support!</p>
-                        <form action="#" class="form" type="post">
-                            <div class="row mb-2">
-                                <div class="col-md-6 mb-2">
-                                    <input type="text" name="" placeholder="Enter your Name" class="name">
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text" name="" placeholder="Enter phone number" class="number">
-                                </div>
-                            </div>
-                            <div class="row mb-2">
-                                <div class="col-md-12">
-                                    <input type="email" name="" placeholder="Enter your E-mail Address" class="email">
-                                </div>
-                            </div>
-                            <div class="row mb-2">
-                                <div class="col-md-12">
-                                    <textarea name="" id="" placeholder="Enter your message!!!" class="message mb-1" rows="4"></textarea>
-                                    <label for="image" class="form-label">Select an Image</label>
-                                    <input type="file" class="form-control" id="image">
-                                </div>
-                            </div>
-                            <input type="submit" name="submit" id="submit" class="submit-btn">
-                        </form>
-                    </div>
-                    <div class="col-lg-5 mt-2 d-flex align-items-center justify-content-center justify-content-lg-end">
-                        <div class="info-sec p-3">
-                            <h4 class="text-light">Info</h4>
-                            <div class="info-card ms-4">
-                                <p class="text-light"><i class="fa-solid fa-envelope"></i> info@wakeupict.com</p>
-                                <p class="text-light"><i class="fa-solid fa-phone"></i> +88 01791612121</p>
-                                <p class="text-light"><i class="fa-solid fa-location-dot"></i> Rajbari, Bangladesh</p>
-                            </div>
+                <div class="col-lg-5 mt-2 d-flex align-items-center justify-content-center justify-content-lg-end">
+                    <div class="info-sec p-3">
+                        <h4 class="text-light">Info</h4>
+                        <div class="info-card ms-4">
+                            <p class="text-light"><i class="fa-solid fa-envelope"></i> info@wakeupict.com</p>
+                            <p class="text-light"><i class="fa-solid fa-phone"></i> +88 01791612121</p>
+                            <p class="text-light"><i class="fa-solid fa-location-dot"></i> Rajbari, Bangladesh</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact section end -->
+    <!-- Contact section end -->
 
-        
 
-        <!-- ==========support section start========== -->
 
-        <section id="support">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 d-flex flex-column justify-content-center">
-                        <h4 class="d_title">সার্বক্ষণিক সহায়তার জন্য থাকছে
-                            <span class="discord h4">ডিসকোর্ড</span> সাপোর্ট চ্যানেল</h4>
-                        <p class="d_desc">এই কোর্সের জন্য আমরা একটি প্রাইভেট ডিসকোর্ড সাপোর্ট চ্যানেল তৈরী করেছি যেখানে কোর্স ইন্সট্রাক্টর সুমিত সাহা এবং তাপস অধিকারী সহ আরো ৫-৬ জন ওয়েব ডেভেলপার সরাসরি আপনাদের বিভিন্ন প্রশ্নের উত্তর দিবেন। আমরা অঙ্গীকার করছি সর্বোচ্চ ২৪ ঘণ্টার মধ্যে আপনাদের প্রশ্নের উত্তর দিতে পারবো। তবে অধিকাংশ ক্ষেত্রে তার চেয়েও কম সময়ে আপনারা উত্তর পেয়ে যাবেন। এছাড়া প্রতি সপ্তাহে আলোচিত মডিউলের উপর লাইভ সেশন থাকবে যেখানে আপনারা সরাসরি প্রশ্ন করে উত্তর পেতে পারবেন।</p>
-                        <div class="btns">
-                            <a href="#" class="support_btn"><i class="fa-solid fa-phone"></i> সাপোর্ট সেন্টারে কল করুন</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 image_sec d-flex justify-content-end">
-                        <img src="asset/transparent-man-working-laptop-headset-concentration-desk-cartoon-man-at-desk-with-laptop-headset657139e3851d07.2755875417019192035452.png" alt="">
+    <!-- ==========support section start========== -->
+
+    <section id="support">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h4 class="d_title">সার্বক্ষণিক সহায়তার জন্য থাকছে
+                        <span class="discord h4">ডিসকোর্ড</span> সাপোর্ট চ্যানেল</h4>
+                    <p class="d_desc">এই কোর্সের জন্য আমরা একটি প্রাইভেট ডিসকোর্ড সাপোর্ট চ্যানেল তৈরী করেছি যেখানে কোর্স ইন্সট্রাক্টর সুমিত সাহা এবং তাপস অধিকারী সহ আরো ৫-৬ জন ওয়েব ডেভেলপার সরাসরি আপনাদের বিভিন্ন প্রশ্নের উত্তর দিবেন। আমরা অঙ্গীকার করছি সর্বোচ্চ ২৪ ঘণ্টার
+                        মধ্যে আপনাদের প্রশ্নের উত্তর দিতে পারবো। তবে অধিকাংশ ক্ষেত্রে তার চেয়েও কম সময়ে আপনারা উত্তর পেয়ে যাবেন। এছাড়া প্রতি সপ্তাহে আলোচিত মডিউলের উপর লাইভ সেশন থাকবে যেখানে আপনারা সরাসরি প্রশ্ন করে উত্তর পেতে পারবেন।</p>
+                    <div class="btns">
+                        <a href="#" class="support_btn"><i class="fa-solid fa-phone"></i> সাপোর্ট সেন্টারে কল করুন</a>
                     </div>
                 </div>
+                <div class="col-lg-6 image_sec d-flex justify-content-end">
+                    <img src="asset/transparent-man-working-laptop-headset-concentration-desk-cartoon-man-at-desk-with-laptop-headset657139e3851d07.2755875417019192035452.png" alt="">
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- ==========support section end========== -->
+    <!-- ==========support section end========== -->
 
     <!-- footer section start -->
     <footer id="footer">
@@ -149,66 +142,67 @@
                         </a>
                         <a href="#">
                             <i class="fa-brands fa-instagram"></i>
-                        </i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-skype"></i>
-                    </a>
-                    <div class="mail d-flex gap-1 align-items-center mt-2 text-light">
-                        <i class="fa-solid fa-envelope"></i>
-                        <p class="text-light fs-6 m-0">info@wakeupict.com</p>
-                    </div>
-                    <div class="mail d-flex gap-1 align-items-center text-light">
-                        <i class="fa-solid fa-phone"></i>
-                        <p class="text-light fs-6 m-0">+880 1791-612121</p>
+                            </i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-skype"></i>
+                        </a>
+                        <div class="mail d-flex gap-1 align-items-center mt-2 text-light">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p class="text-light fs-6 m-0">info@wakeupict.com</p>
+                        </div>
+                        <div class="mail d-flex gap-1 align-items-center text-light">
+                            <i class="fa-solid fa-phone"></i>
+                            <p class="text-light fs-6 m-0">+880 1791-612121</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 mt-2">
-                <h2 class="fw-bold text-light info">Information</h2>
-                <ul class="list-unstyled">
-                    <li class="info-link link1">
-                        <a href="about.html" class="text-secondary text-decoration-none">Contact Us</a>
-                    </li>
-                    <li class="info-link link2">
-                        <a href="courses.html" class="text-secondary text-decoration-none">All Courses</a>
-                    </li>
-                    <li class="info-link link3">
-                        <a href="instructors.html" class="text-secondary text-decoration-none">Tutors</a>
-                    </li>
-                    <li class="info-link link4">
-                        <a href="blog.html" class="text-secondary text-decoration-none">Blog</a>
-                    </li>
-                    <li class="info-link link5">
-                        <a href="#" class="text-secondary text-decoration-none">new</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-4 mt-2">
-                <h2 class="fw-bold text-light popular">Popular Courses</h2>
-                <ul class="list-unstyled">
-                    <li class="info-link link1">
-                        <a href="single-course.html" class="text-secondary text-decoration-none">Basic Computer</a>
-                    </li>
-                    <li class="info-link link2">
-                        <a href="single-course.html" class="text-secondary text-decoration-none">Graphics Design</a>
-                    </li>
-                    <li class="info-link link3">
-                        <a href="single-course.html" class="text-secondary text-decoration-none">Digital Marketing</a>
-                    </li>
-                    <li class="info-link link4">
-                        <a href="single-course.html" class="text-secondary text-decoration-none">Web Development</a>
-                    </li>
-                </ul>
+                <div class="col-md-4 mt-2">
+                    <h2 class="fw-bold text-light info">Information</h2>
+                    <ul class="list-unstyled">
+                        <li class="info-link link1">
+                            <a href="about.html" class="text-secondary text-decoration-none">Contact Us</a>
+                        </li>
+                        <li class="info-link link2">
+                            <a href="courses.html" class="text-secondary text-decoration-none">All Courses</a>
+                        </li>
+                        <li class="info-link link3">
+                            <a href="instructors.html" class="text-secondary text-decoration-none">Tutors</a>
+                        </li>
+                        <li class="info-link link4">
+                            <a href="blog.html" class="text-secondary text-decoration-none">Blog</a>
+                        </li>
+                        <li class="info-link link5">
+                            <a href="#" class="text-secondary text-decoration-none">new</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <h2 class="fw-bold text-light popular">Popular Courses</h2>
+                    <ul class="list-unstyled">
+                        <li class="info-link link1">
+                            <a href="single-course.html" class="text-secondary text-decoration-none">Basic Computer</a>
+                        </li>
+                        <li class="info-link link2">
+                            <a href="single-course.html" class="text-secondary text-decoration-none">Graphics Design</a>
+                        </li>
+                        <li class="info-link link3">
+                            <a href="single-course.html" class="text-secondary text-decoration-none">Digital Marketing</a>
+                        </li>
+                        <li class="info-link link4">
+                            <a href="single-course.html" class="text-secondary text-decoration-none">Web Development</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </footer>
+    <div class="copy">
+        <p class="text-light text-center m-0 py-1 bg-dark">&copy All rights reserved by Wahid Hasib</p>
     </div>
-</footer>
-<div class="copy">
-    <p class="text-light text-center m-0 py-1 bg-dark">&copy All rights reserved by Wahid Hasib</p>
-</div>
-<!-- footer section end -->
+    <!-- footer section end -->
 
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>

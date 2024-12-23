@@ -1,3 +1,30 @@
 {
-  "editor.formatOnSave": true
+  "workbench.iconTheme": "material-icon-theme",
+  "phpfmt.exclude": ["AllmanStyleBraces"],
+  "phpfmt.cakephp": true,
+  "phpformatter.composer": true,
+  "git.ignoreMissingGitWarning": true,
+  "editor.codeActionsOnSave": null,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true
+  },
+  "workbench.colorTheme": "Monokai Classic",
+  "editor.largeFileOptimizations": false,
+  "settingsSync.ignoredExtensions": ["ms-vscode.azure-account"],
+  "tabnine.experimentalAutoImports": true,
+  "files.autoSave": "off",
+  "editor.formatOnSave": true,
+  "workbench.editor.enablePreview": false,
+  "window.zoomLevel": 2,
+  "editor.stickyScroll.enabled": false,
+  "editor.minimap.enabled": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "database-client.autoSync": true,
+  "workbench.settings.useSplitJSON": true
 }
