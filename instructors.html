@@ -1,414 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>blog page</title>
+    <title>Instructors - Wake Up ICT</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="font-awesome/css/all.min.css" />
     <link rel="stylesheet" href="css/instructors.css" />
     <!-- scroll reveal cdn -->
     <script src="https://unpkg.com/scrollreveal"></script>
-  </head>
-  <body>
+
+    <!-- import from wake up old website -->
+    <link rel="shortcut icon" href="asset/fab.png">
+    <meta name="description" content="<p><strong>Wake Up ICT</strong> Academy is one of the leading IT Training Institute in Bangladesh and provides all kinds of <strong>IT-Related Solutions</strong>. Wake UP ICT has been playing a vital role in Rajbari eradicate the unemployment problem since 2015...</p>"
+    />
+    <link rel="canonical" href="asset/wict-logo.png" />
+    <meta property="og:locale" content="asset/wict-logo.png" />
+    <meta property="og:type" content="" />
+    <meta property="og:title" content="IT Company Rajbari Bangladesh | Wake Up ICT" />
+    <meta property="og:description" content="<p><strong>Wake Up ICT</strong> Academy is one of the leading IT Training Institute in Bangladesh and provides all kinds of <strong>IT-Related Solutions</strong>. Wake UP ICT has been playing a vital role in Rajbari eradicate the unemployment problem since 2015...</p>"
+    />
+    <meta property="og:url" content="asset/wict-logo.png" />
+    <meta property="og:site_name" content="" />
+    <meta property="article:publisher" content="" />
+    <meta property="article:modified_time" content="" />
+    <meta property="og:image:width" content="324" />
+    <meta property="og:image:height" content="3423" />
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:title" content="IT Company Rajbari Bangladesh | Wake Up ICT" />
+    <meta name="twitter:description" content="<p><strong>Wake Up ICT</strong> Academy is one of the leading IT Training Institute in Bangladesh and provides all kinds of <strong>IT-Related Solutions</strong>. Wake UP ICT has been playing a vital role in Rajbari eradicate the unemployment problem since 2015...</p>"
+    />
+    <meta name="twitter:label1" content="" />
+    <meta name="twitter:data1" content="" />
+    <meta name="msvalidate.01" content="" />
+    <meta name="google-site-verification" content="" />
+
+
+</head>
+
+<body>
     <!-- Navbar start -->
-    <nav
-      class="navbar navbar-expand-md navbar-light px-lg-5 sticky-top"
-      id="navigation"
-    >
-      <div class="container-fluid d-flex justify-content-between">
-        <a class="navbar-brand" href="index.html">
-          <img src="asset/wict-logo.png" alt="" id="logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mynavbar"
-        >
+    <nav class="navbar navbar-expand-md navbar-light px-lg-5 sticky-top" id="navigation">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="index.html">
+                <img src="asset/wict-logo.png" alt="" id="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="mynavbar"
-        >
-          <ul class="navbar-nav ms-auto navigation">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="courses.html">Courses</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="contact.html">Instructors</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-          </ul>
-          <form class="d-flex ms-auto">
-            <input
-              class="form-control"
-              type="text"
-              placeholder="Search"
-              id="search_input"
-            />
-            <button id="search_btn" type="submit">
+            <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
+                <ul class="navbar-nav ms-auto navigation">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Instructors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto">
+                    <input class="form-control" type="text" placeholder="Search" id="search_input" />
+                    <button id="search_btn" type="submit">
               <i class="fa-brands fa-searchengin"></i>
               <span>Search</span>
             </button>
-          </form>
+                </form>
+            </div>
         </div>
-      </div>
     </nav>
     <!-- Navbar end -->
     <section id="instructors">
-      <div class="banner">
-        <h2 class="text-dark fw-bold">Instructors Page</h2>
-      </div>
-      <div class="container py-3">
-        <h2 class="fw-bold ins_title">Our Expert Instructors</h2>
-        <div class="row pb-3">
-          <div class="col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center mt-2 suggest1 ins_1">
-            <div class="s-card mt-2">
-                <div class="s-card-image">
-                    <img src="asset/portrait-three-serious-students-studying-library.jpg" alt="" class="mw-100">
-                </div>
-                <p class="s-card-title">Mehedi Hasan Pranto</p>
-                <div class="s-card-body">
-                    <p class="text-secondary m-0">Junior Web Developer</p>
-                </div>
-                
-                <div class="social-card mx-auto">
-                  <a class="socialContainer containerOne text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-facebook"></i>
-                  </a>
-                  <a class="socialContainer containerTwo" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-linkedin text-light"></i>
-                  </a>
-                  <a class="socialContainer containerThree text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-youtube"></i>
-                  </a>
-                  <a class="socialContainer containerFour text-decoration-none text-light" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-github"></i>
-                  </a>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center mt-2 suggest1 ins_2">
-            <div class="s-card mt-2">
-                <div class="s-card-image">
-                    <img src="asset/portrait-three-serious-students-studying-library.jpg" alt="" class="mw-100">
-                </div>
-                <p class="s-card-title">Mehedi Hasan Pranto</p>
-                <div class="s-card-body">
-                    <p class="text-secondary m-0">Junior Web Developer</p>
-                </div>
-                
-                <div class="social-card mx-auto">
-                  <a class="socialContainer containerOne text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-facebook"></i>
-                  </a>
-                  <a class="socialContainer containerTwo" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-linkedin text-light"></i>
-                  </a>
-                  <a class="socialContainer containerThree text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-youtube"></i>
-                  </a>
-                  <a class="socialContainer containerFour text-decoration-none text-light" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-github"></i>
-                  </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center mt-2 suggest1 ins_3">
-            <div class="s-card mt-2">
-                <div class="s-card-image">
-                    <img src="asset/portrait-three-serious-students-studying-library.jpg" alt="" class="mw-100">
-                </div>
-                <p class="s-card-title">Mehedi Hasan Pranto</p>
-                <div class="s-card-body">
-                    <p class="text-secondary m-0">Junior Web Developer</p>
-                </div>
-                
-                <div class="social-card mx-auto">
-                  <a class="socialContainer containerOne text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-facebook"></i>
-                  </a>
-                  <a class="socialContainer containerTwo" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-linkedin text-light"></i>
-                  </a>
-                  <a class="socialContainer containerThree text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-youtube"></i>
-                  </a>
-                  <a class="socialContainer containerFour text-decoration-none text-light" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-github"></i>
-                  </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center mt-2 suggest1 ins_4">
-            <div class="s-card mt-2">
-                <div class="s-card-image">
-                    <img src="asset/portrait-three-serious-students-studying-library.jpg" alt="" class="mw-100">
-                </div>
-                <p class="s-card-title">Mehedi Hasan Pranto</p>
-                <div class="s-card-body">
-                    <p class="text-secondary m-0">Junior Web Developer</p>
-                </div>
-                
-                <div class="social-card mx-auto">
-                  <a class="socialContainer containerOne text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-facebook"></i>
-                  </a>
-                  <a class="socialContainer containerTwo" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-linkedin text-light"></i>
-                  </a>
-                  <a class="socialContainer containerThree text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-youtube"></i>
-                  </a>
-                  <a class="socialContainer containerFour text-decoration-none text-light" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-github"></i>
-                  </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center mt-2 suggest1 ins_5">
-            <div class="s-card mt-2">
-                <div class="s-card-image">
-                    <img src="asset/portrait-three-serious-students-studying-library.jpg" alt="" class="mw-100">
-                </div>
-                <p class="s-card-title">Mehedi Hasan Pranto</p>
-                <div class="s-card-body">
-                    <p class="text-secondary m-0">Junior Web Developer</p>
-                </div>
-                
-                <div class="social-card mx-auto">
-                  <a class="socialContainer containerOne text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-facebook"></i>
-                  </a>
-                  <a class="socialContainer containerTwo" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-linkedin text-light"></i>
-                  </a>
-                  <a class="socialContainer containerThree text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-youtube"></i>
-                  </a>
-                  <a class="socialContainer containerFour text-decoration-none text-light" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-github"></i>
-                  </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center mt-2 suggest1 ins_6">
-            <div class="s-card mt-2">
-                <div class="s-card-image">
-                    <img src="asset/portrait-three-serious-students-studying-library.jpg" alt="" class="mw-100">
-                </div>
-                <p class="s-card-title">Mehedi Hasan Pranto</p>
-                <div class="s-card-body">
-                    <p class="text-secondary m-0">Junior Web Developer</p>
-                </div>
-                
-                <div class="social-card mx-auto">
-                  <a class="socialContainer containerOne text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-facebook"></i>
-                  </a>
-                  <a class="socialContainer containerTwo" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-linkedin text-light"></i>
-                  </a>
-                  <a class="socialContainer containerThree text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-youtube"></i>
-                  </a>
-                  <a class="socialContainer containerFour text-decoration-none text-light" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-github"></i>
-                  </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center mt-2 suggest1 ins_7">
-            <div class="s-card mt-2">
-                <div class="s-card-image">
-                    <img src="asset/portrait-three-serious-students-studying-library.jpg" alt="" class="mw-100">
-                </div>
-                <p class="s-card-title">Mehedi Hasan Pranto</p>
-                <div class="s-card-body">
-                    <p class="text-secondary m-0">Junior Web Developer</p>
-                </div>
-                
-                <div class="social-card mx-auto">
-                  <a class="socialContainer containerOne text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-facebook"></i>
-                  </a>
-                  <a class="socialContainer containerTwo" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-linkedin text-light"></i>
-                  </a>
-                  <a class="socialContainer containerThree text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-youtube"></i>
-                  </a>
-                  <a class="socialContainer containerFour text-decoration-none text-light" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-github"></i>
-                  </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center mt-2 suggest1 ins_8">
-            <div class="s-card mt-2">
-                <div class="s-card-image">
-                    <img src="asset/portrait-three-serious-students-studying-library.jpg" alt="" class="mw-100">
-                </div>
-                <p class="s-card-title">Mehedi Hasan Pranto</p>
-                <div class="s-card-body">
-                    <p class="text-secondary m-0">Junior Web Developer</p>
-                </div>
-                
-                <div class="social-card mx-auto">
-                  <a class="socialContainer containerOne text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-facebook"></i>
-                  </a>
-                  <a class="socialContainer containerTwo" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-linkedin text-light"></i>
-                  </a>
-                  <a class="socialContainer containerThree text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-youtube"></i>
-                  </a>
-                  <a class="socialContainer containerFour text-decoration-none text-light" href="https://en-gb.facebook.com/wahidhasib911">
-                      <i class="fa-brands fa-github"></i>
-                  </a>
-              </div>
-            </div>
-          </div>
-
-          <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center mt-3">
-              <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-              </li>
-            </ul>
-          </nav>
+        <div class="banner">
+            <h2 class="text-dark fw-bold">Instructors Page</h2>
         </div>
+        <div class="container py-3">
+            <h2 class="fw-bold ins_title">Our Expert Instructors</h2>
+            <div class="row pb-3">
+                <div class="col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center mt-2 suggest1 ins_1">
+                    <div class="s-card mt-2">
+                        <div class="s-card-image">
+                            <img src="asset/portrait-three-serious-students-studying-library.jpg" alt="" class="mw-100">
+                        </div>
+                        <p class="s-card-title">Mehedi Hasan Pranto</p>
+                        <div class="s-card-body">
+                            <p class="text-secondary m-0">Junior Web Developer</p>
+                        </div>
 
-        <div class="row mt-3">
-          <div class="col-sm-4">
-            <div class="desc1 d-flex gap-2">
-              <i
-                class="fa-solid fa-graduation-cap fs-1 m-0 d-flex align-items-center"
-              ></i>
-              <div class="counter">
-                <p class="text-danger fs-3 m-0 fw-bold">1K+</p>
-                <p class="fw-bold m-0">Happy Students</p>
-              </div>
+                        <div class="social-card mx-auto">
+                            <a class="socialContainer containerOne text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a class="socialContainer containerTwo" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-linkedin text-light"></i>
+                            </a>
+                            <a class="socialContainer containerThree text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a class="socialContainer containerFour text-decoration-none text-light" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center mt-2 suggest1 ins_2">
+                    <div class="s-card mt-2">
+                        <div class="s-card-image">
+                            <img src="asset/portrait-three-serious-students-studying-library.jpg" alt="" class="mw-100">
+                        </div>
+                        <p class="s-card-title">Mehedi Hasan Pranto</p>
+                        <div class="s-card-body">
+                            <p class="text-secondary m-0">Junior Web Developer</p>
+                        </div>
+
+                        <div class="social-card mx-auto">
+                            <a class="socialContainer containerOne text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a class="socialContainer containerTwo" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-linkedin text-light"></i>
+                            </a>
+                            <a class="socialContainer containerThree text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a class="socialContainer containerFour text-decoration-none text-light" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center mt-2 suggest1 ins_3">
+                    <div class="s-card mt-2">
+                        <div class="s-card-image">
+                            <img src="asset/portrait-three-serious-students-studying-library.jpg" alt="" class="mw-100">
+                        </div>
+                        <p class="s-card-title">Mehedi Hasan Pranto</p>
+                        <div class="s-card-body">
+                            <p class="text-secondary m-0">Junior Web Developer</p>
+                        </div>
+
+                        <div class="social-card mx-auto">
+                            <a class="socialContainer containerOne text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a class="socialContainer containerTwo" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-linkedin text-light"></i>
+                            </a>
+                            <a class="socialContainer containerThree text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a class="socialContainer containerFour text-decoration-none text-light" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center mt-2 suggest1 ins_4">
+                    <div class="s-card mt-2">
+                        <div class="s-card-image">
+                            <img src="asset/portrait-three-serious-students-studying-library.jpg" alt="" class="mw-100">
+                        </div>
+                        <p class="s-card-title">Mehedi Hasan Pranto</p>
+                        <div class="s-card-body">
+                            <p class="text-secondary m-0">Junior Web Developer</p>
+                        </div>
+
+                        <div class="social-card mx-auto">
+                            <a class="socialContainer containerOne text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a class="socialContainer containerTwo" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-linkedin text-light"></i>
+                            </a>
+                            <a class="socialContainer containerThree text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a class="socialContainer containerFour text-decoration-none text-light" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center mt-2 suggest1 ins_5">
+                    <div class="s-card mt-2">
+                        <div class="s-card-image">
+                            <img src="asset/portrait-three-serious-students-studying-library.jpg" alt="" class="mw-100">
+                        </div>
+                        <p class="s-card-title">Mehedi Hasan Pranto</p>
+                        <div class="s-card-body">
+                            <p class="text-secondary m-0">Junior Web Developer</p>
+                        </div>
+
+                        <div class="social-card mx-auto">
+                            <a class="socialContainer containerOne text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a class="socialContainer containerTwo" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-linkedin text-light"></i>
+                            </a>
+                            <a class="socialContainer containerThree text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a class="socialContainer containerFour text-decoration-none text-light" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center mt-2 suggest1 ins_6">
+                    <div class="s-card mt-2">
+                        <div class="s-card-image">
+                            <img src="asset/portrait-three-serious-students-studying-library.jpg" alt="" class="mw-100">
+                        </div>
+                        <p class="s-card-title">Mehedi Hasan Pranto</p>
+                        <div class="s-card-body">
+                            <p class="text-secondary m-0">Junior Web Developer</p>
+                        </div>
+
+                        <div class="social-card mx-auto">
+                            <a class="socialContainer containerOne text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a class="socialContainer containerTwo" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-linkedin text-light"></i>
+                            </a>
+                            <a class="socialContainer containerThree text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a class="socialContainer containerFour text-decoration-none text-light" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center mt-2 suggest1 ins_7">
+                    <div class="s-card mt-2">
+                        <div class="s-card-image">
+                            <img src="asset/portrait-three-serious-students-studying-library.jpg" alt="" class="mw-100">
+                        </div>
+                        <p class="s-card-title">Mehedi Hasan Pranto</p>
+                        <div class="s-card-body">
+                            <p class="text-secondary m-0">Junior Web Developer</p>
+                        </div>
+
+                        <div class="social-card mx-auto">
+                            <a class="socialContainer containerOne text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a class="socialContainer containerTwo" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-linkedin text-light"></i>
+                            </a>
+                            <a class="socialContainer containerThree text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a class="socialContainer containerFour text-decoration-none text-light" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center mt-2 suggest1 ins_8">
+                    <div class="s-card mt-2">
+                        <div class="s-card-image">
+                            <img src="asset/portrait-three-serious-students-studying-library.jpg" alt="" class="mw-100">
+                        </div>
+                        <p class="s-card-title">Mehedi Hasan Pranto</p>
+                        <div class="s-card-body">
+                            <p class="text-secondary m-0">Junior Web Developer</p>
+                        </div>
+
+                        <div class="social-card mx-auto">
+                            <a class="socialContainer containerOne text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a class="socialContainer containerTwo" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-linkedin text-light"></i>
+                            </a>
+                            <a class="socialContainer containerThree text-light text-decoration-none" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a class="socialContainer containerFour text-decoration-none text-light" href="https://en-gb.facebook.com/wahidhasib911">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center mt-3">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="desc2 d-flex gap-2">
-              <i
-                class="fa-solid fa-book-open fs-1 m-0 d-flex align-items-center"
-              ></i>
-              <div class="counter">
-                <p class="text-danger fs-3 m-0 fw-bold">1K+</p>
-                <p class="fw-bold m-0">Popular Courses</p>
-              </div>
+
+            <div class="row mt-3">
+                <div class="col-sm-4">
+                    <div class="desc1 d-flex gap-2">
+                        <i class="fa-solid fa-graduation-cap fs-1 m-0 d-flex align-items-center"></i>
+                        <div class="counter">
+                            <p class="text-danger fs-3 m-0 fw-bold">1K+</p>
+                            <p class="fw-bold m-0">Happy Students</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="desc2 d-flex gap-2">
+                        <i class="fa-solid fa-book-open fs-1 m-0 d-flex align-items-center"></i>
+                        <div class="counter">
+                            <p class="text-danger fs-3 m-0 fw-bold">1K+</p>
+                            <p class="fw-bold m-0">Popular Courses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="desc3 d-flex gap-2">
+                        <i class="fa-solid fa-user-tie fs-1 m-0 d-flex align-items-center"></i>
+                        <div class="counter">
+                            <p class="text-danger fs-3 m-0 fw-bold">1K+</p>
+                            <p class="fw-bold m-0">Popular Courses</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="desc3 d-flex gap-2">
-              <i
-                class="fa-solid fa-user-tie fs-1 m-0 d-flex align-items-center"
-              ></i>
-              <div class="counter">
-                <p class="text-danger fs-3 m-0 fw-bold">1K+</p>
-                <p class="fw-bold m-0">Popular Courses</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- footer section start -->
     <footer id="footer">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-4">
-                  <a href="#">
-                      <img src="asset/wict-logo.png" alt="" class="f_logo">
-                  </a>
-                  <p class="text-light slogan">One of the best It company all over Bangladesh.</p>
-                  <div class="social-links">
-                      <a href="#">
-                          <i class="fa-brands fa-facebook"></i>
-                      </a>
-                      <a href="#">
-                          <i class="fa-brands fa-instagram"></i>
-                      </i>
-                  </a>
-                  <a href="#">
-                      <i class="fa-brands fa-skype"></i>
-                  </a>
-                  <div class="mail d-flex gap-1 align-items-center mt-2 text-light">
-                      <i class="fa-solid fa-envelope"></i>
-                      <p class="text-light fs-6 m-0">info@wakeupict.com</p>
-                  </div>
-                  <div class="mail d-flex gap-1 align-items-center text-light">
-                      <i class="fa-solid fa-phone"></i>
-                      <p class="text-light fs-6 m-0">+880 1791-612121</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4 mt-2">
-              <h2 class="fw-bold text-light info">Information</h2>
-              <ul class="list-unstyled">
-                  <li class="info-link link1">
-                      <a href="about.html" class="text-secondary text-decoration-none">Contact Us</a>
-                  </li>
-                  <li class="info-link link2">
-                      <a href="courses.html" class="text-secondary text-decoration-none">All Courses</a>
-                  </li>
-                  <li class="info-link link3">
-                      <a href="instructors.html" class="text-secondary text-decoration-none">Tutors</a>
-                  </li>
-                  <li class="info-link link4">
-                      <a href="blog.html" class="text-secondary text-decoration-none">Blog</a>
-                  </li>
-                  <li class="info-link link5">
-                      <a href="#" class="text-secondary text-decoration-none">new</a>
-                  </li>
-              </ul>
-          </div>
-          <div class="col-md-4 mt-2">
-              <h2 class="fw-bold text-light popular">Popular Courses</h2>
-              <ul class="list-unstyled">
-                  <li class="info-link link1">
-                      <a href="single-course.html" class="text-secondary text-decoration-none">Basic Computer</a>
-                  </li>
-                  <li class="info-link link2">
-                      <a href="single-course.html" class="text-secondary text-decoration-none">Graphics Design</a>
-                  </li>
-                  <li class="info-link link3">
-                      <a href="single-course.html" class="text-secondary text-decoration-none">Digital Marketing</a>
-                  </li>
-                  <li class="info-link link4">
-                      <a href="single-course.html" class="text-secondary text-decoration-none">Web Development</a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </div>
-</footer>
-<div class="copy">
-  <p class="text-light text-center m-0 py-1 bg-dark">&copy All rights reserved by Wahid Hasib</p>
-</div>
-<!-- footer section end -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="index.html">
+                        <img src="asset/wict-logo.png" alt="" class="f_logo">
+                    </a>
+                    <p class="text-light slogan">One of the best It company all over Bangladesh.</p>
+                    <div class="social-links">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                            </i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-skype"></i>
+                        </a>
+                        <div class="mail d-flex gap-1 align-items-center mt-2 text-light">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p class="text-light fs-6 m-0">info@wakeupict.com</p>
+                        </div>
+                        <div class="mail d-flex gap-1 align-items-center text-light">
+                            <i class="fa-solid fa-phone"></i>
+                            <p class="text-light fs-6 m-0">+880 1791-612121</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <h2 class="fw-bold text-light info">Information</h2>
+                    <ul class="list-unstyled">
+                        <li class="info-link link1">
+                            <a href="about.html" class="text-secondary text-decoration-none">About</a>
+                        </li>
+                        <li class="info-link link1">
+                            <a href="contact.html" class="text-secondary text-decoration-none">Contact Us</a>
+                        </li>
+                        <li class="info-link link2">
+                            <a href="courses.html" class="text-secondary text-decoration-none">All Courses</a>
+                        </li>
+                        <li class="info-link link4">
+                            <a href="blog.html" class="text-secondary text-decoration-none">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <h2 class="fw-bold text-light popular">Popular Courses</h2>
+                    <ul class="list-unstyled">
+                        <li class="info-link link1">
+                            <a href="single-course-com.html" class="text-secondary text-decoration-none">Basic Computer</a>
+                        </li>
+                        <li class="info-link link2">
+                            <a href="single-course-gra.html" class="text-secondary text-decoration-none">Graphics Design</a>
+                        </li>
+                        <li class="info-link link3">
+                            <a href="single-course-digi.html" class="text-secondary text-decoration-none">Digital Marketing</a>
+                        </li>
+                        <li class="info-link link4">
+                            <a href="single-course.html" class="text-secondary text-decoration-none">Web Development</a>
+                        </li>
+                        <!-- <li class="info-link link4">
+                            <a href="courseVideo.html" class="text-secondary text-decoration-none">Course Video</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copy">
+        <p class="text-light text-center m-0 py-1 bg-dark">&copy All rights reserved by Wahid Hasib</p>
+    </div>
+    <!-- footer section end -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/instructors.js"></script>
-  </body>
+</body>
+
 </html>

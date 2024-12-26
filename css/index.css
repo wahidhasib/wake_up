@@ -79,6 +79,26 @@
 #mynavbar .nav-link {
     font-weight: 500;
     letter-spacing: 1px;
+    position: relative;
+}
+
+#mynavbar .nav-link::before {
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: var(--main-clr);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease;
+}
+
+#mynavbar .nav-link:hover::before {
+    width: 100%;
+}
+
+#mynavbar .nav-link.dropdown-toggle:hover::before {
+    width: 0;
 }
 
 #mynavbar .nav-link.active {
@@ -477,7 +497,7 @@ section#comunity {
 
 .s-card {
     padding-bottom: 10px;
-    width: 315px;
+    width: 250px;
     height: 315px;
     border-radius: 8px;
     background: #e8e8e8;
@@ -810,3 +830,8 @@ section#comunity {
 
 
 /* ============footer section end============= */
+
+.carousel-caption {
+    width: 40%;
+    margin-left: auto;
+}

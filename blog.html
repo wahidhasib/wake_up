@@ -1,217 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>blog page</title>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="font-awesome/css/all.min.css">
-        <link rel="stylesheet" href="css/blog.css">
-        <!-- scroll reveal cdn -->
-        <script src="https://unpkg.com/scrollreveal"></script>
-    </head>
-    <body>
-        <!-- Navbar start -->
-        <nav class="navbar navbar-expand-md navbar-light px-lg-5 sticky-top" id="navigation">
-            <div class="container-fluid d-flex justify-content-between">
-                <a class="navbar-brand" href="index.html">
-                    <img src="asset/wict-logo.png" alt="" id="logo">
-                </a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#mynavbar"
-                >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Wake Up ICT</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <!-- import from wake up old website -->
+
+    <link rel="shortcut icon" href="asset/fab.png">
+    <meta name="description" content="<p><strong>Wake Up ICT</strong> Academy is one of the leading IT Training Institute in Bangladesh and provides all kinds of <strong>IT-Related Solutions</strong>. Wake UP ICT has been playing a vital role in Rajbari eradicate the unemployment problem since 2015...</p>"
+    />
+    <link rel="canonical" href="asset/wict-logo.png" />
+    <meta property="og:locale" content="asset/wict-logo.png" />
+    <meta property="og:type" content="" />
+    <meta property="og:title" content="IT Company Rajbari Bangladesh | Wake Up ICT" />
+    <meta property="og:description" content="<p><strong>Wake Up ICT</strong> Academy is one of the leading IT Training Institute in Bangladesh and provides all kinds of <strong>IT-Related Solutions</strong>. Wake UP ICT has been playing a vital role in Rajbari eradicate the unemployment problem since 2015...</p>"
+    />
+    <meta property="og:url" content="asset/wict-logo.png" />
+    <meta property="og:site_name" content="" />
+    <meta property="article:publisher" content="" />
+    <meta property="article:modified_time" content="" />
+    <meta property="og:image:width" content="324" />
+    <meta property="og:image:height" content="3423" />
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:title" content="IT Company Rajbari Bangladesh | Wake Up ICT" />
+    <meta name="twitter:description" content="<p><strong>Wake Up ICT</strong> Academy is one of the leading IT Training Institute in Bangladesh and provides all kinds of <strong>IT-Related Solutions</strong>. Wake UP ICT has been playing a vital role in Rajbari eradicate the unemployment problem since 2015...</p>"
+    />
+    <meta name="twitter:label1" content="" />
+    <meta name="twitter:data1" content="" />
+    <meta name="msvalidate.01" content="" />
+    <meta name="google-site-verification" content="" />
+
+
+    <!-- scroll reveal cdn -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light px-lg-5 sticky-top" id="navigation">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="index.html">
+                <img src="asset/wict-logo.png" alt="" id="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
-                    <ul class="navbar-nav ms-auto navigation">
-                        <li class="nav-item">
-                            <a class="nav-link " href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="courses.html">Courses</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex ms-auto">
-                        <input
-                            class="form-control"
-                            type="text"
-                            placeholder="Search"
-                            id="search_input"
-                        >
-                        <button id="search_btn" type="submit">
+            <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
+                <ul class="navbar-nav ms-auto navigation">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto">
+                    <input class="form-control" type="text" placeholder="Search" id="search_input">
+                    <button id="search_btn" type="submit">
                             <i class="fa-brands fa-searchengin"></i>
                             <span>Search</span>
                         </button>
-                    </form>
-                </div>
+                </form>
             </div>
-        </nav>
-        <!-- Navbar end -->
-        <section id="blog">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-9">
-                        <h3 class="text-dark fw-bold title">Our Blog Post</h3>
-                        <div class="row">
-                            <div class="col-sm-6 col-lg-4 mt-2 card-1">
-                                <a href="single_blog.html" class="text-decoration-none m-0 p-0">
-                                    <div class="post-card">
-                                        <div class="card-img">
-                                            <img src="asset/portrait-three-serious-students-studying-library.jpg" alt="" class="post-img mw-100 rounded">
-                                        </div>
-                                        <div class="card-content mt-2 p-2">
-                                            <h2 class="box-title h5">ইনভেন্টরি ম্যানেজমেন্ট সিস্টেম</h2>
-                                            <p class="blog-desc mt-2">
-                                                ব্যবসা প্রসারের জন্য সঠিক স্টক ম্যানেজমেন্ট অত্যন্ত গুরুত্বপূর্ণ। আপনার ব্যবসায়ে স্টকের সঠিক নির্বাচন, ক্রয়, খরচ, গ্রাহকের তথ্য, সরবরাহকারীর তথ্য, আর্থিক রিপোর্ট, লেজার, এবং হিসাবের ম্যানেজমেন্ট একটি সঠিক ইনভেন্টরি সিস্টেমের অংশ।
-                                            </p>
-                                            <p class="date text-secondary mb-1">2024-12-12</p>
-                                            <p class="date text-secondary mb-1">
-                                                লেখকঃ
-                                                <span class="text-dark">Ariful Sikder (Jr.Laravel Developer)</span>
-                                            </p>
-                                        </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h3 class="text-dark fw-bold title">Our Blog Post</h3>
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4 mt-2 card-1">
+                            <a href="single_blog.html" class="text-decoration-none m-0 p-0">
+                                <div class="post-card">
+                                    <div class="card-img">
+                                        <img src="asset/blog1.png" alt="" class="post-img mw-100 rounded">
                                     </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 mt-2 card-2">
-                                <a href="single_blog.html" class="text-decoration-none m-0 p-0">
-                                    <div class="post-card">
-                                        <div class="card-img">
-                                            <img src="asset/devC.jpg" alt="" class="post-img mw-100 rounded">
-                                        </div>
-                                        <div class="card-content mt-2 p-2">
-                                            <h2 class="box-title h5">হিউম্যান রিসোর্স ম্যানেজমেন্ট</h2>
-                                            <p class="blog-desc mt-2">
-                                                হিউম্যান রিসোর্স ম্যানেজমেন্ট সফটওয়্যার এমন একটি সফটওয়্যার, যা HR কে তার প্রতিষ্ঠানের সকল কর্মকর্তাদের নিয়োন্ত্রন করার একটি সহজ এবং গ্রহনযোগ্য উপায় দিয়ে থাকে। এই সফটওয়্যার প্রতিষ্ঠানের সকল ডকুমেন্ট পেপার ছাড়া রাখতে সক্ষম। এবং প্রতেক কর্মকর্তা তাদের নিজেদের ড্যাশবোর্ডে কোস্পানির দেয়া আপডেট পেয়ে থাকে।
-                                            </p>
-                                            <p class="date text-secondary mb-1">2024-12-12</p>
-                                            <p class="date text-secondary mb-1">
-                                                লেখকঃ
-                                                <span class="text-dark">Ariful Sikder (Jr.Laravel Developer)</span>
-                                            </p>
-                                        </div>
+                                    <div class="card-content mt-2 p-2">
+                                        <h2 class="box-title h5">ইনভেন্টরি ম্যানেজমেন্ট সিস্টেম</h2>
+                                        <p class="blog-desc mt-2">
+                                            ব্যবসা প্রসারের জন্য সঠিক স্টক ম্যানেজমেন্ট অত্যন্ত গুরুত্বপূর্ণ। আপনার ব্যবসায়ে স্টকের সঠিক নির্বাচন, ক্রয়, খরচ, গ্রাহকের তথ্য, সরবরাহকারীর তথ্য, আর্থিক রিপোর্ট, লেজার, এবং হিসাবের ম্যানেজমেন্ট একটি সঠিক ইনভেন্টরি সিস্টেমের অংশ।
+                                        </p>
+                                        <p class="date text-secondary mb-1">2023-11-08</p>
+                                        <p class="date text-secondary mb-1">
+                                            লেখকঃ
+                                            <span class="text-dark">Ariful Sikder (Jr.Laravel Developer)</span>
+                                        </p>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 mt-2 card-3">
-                                <a href="single_blog.html" class="text-decoration-none m-0 p-0">
-                                    <div class="post-card">
-                                        <div class="card-img">
-                                            <img src="asset/graphic.jpg" alt="" class="post-img mw-100 rounded">
-                                        </div>
-                                        <div class="card-content mt-2 p-2">
-                                            <h2 class="box-title h5">ওয়েক আপ আই সি টি সম্পূর্ণ বিনামূল্যে দিচ্ছে আই টি বিষয়ে দক্ষ</h2>
-                                            <p class="blog-desc mt-2">
-                                                আপনার  ফ্রিল্যান্সার হওয়ার স্বপ্ন পূরণে ওয়েক আপ আই সি টির এই মহৎ প্রয়াস।আমাদের এই ফ্রী কোর্স আপনার জীবন নিয়ে আসতে পারে সফলতা নতুন সূচনা।
-                                            </p>
-                                            <p class="date text-secondary mb-1">2024-12-12</p>
-                                            <p class="date text-secondary mb-1">
-                                                লেখকঃ
-                                                <span class="text-dark">Ariful Sikder (Jr.Laravel Developer)</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 mt-2 card-4">
-                                <a href="single_blog.html" class="text-decoration-none m-0 p-0">
-                                    <div class="post-card">
-                                        <div class="card-img">
-                                            <img src="asset/portrait-three-serious-students-studying-library.jpg" alt="" class="post-img mw-100 rounded">
-                                        </div>
-                                        <div class="card-content mt-2 p-2">
-                                            <h2 class="box-title h5">ওয়েব ডেভেলপমেন্ট ক্যারিয়ার</h2>
-                                            <p class="blog-desc mt-2">
-                                                ক্যারিয়ার হিসেবে, ওয়েব ডেভেলপমেন্ট বাংলাদেশের একটি অত্যন্ত সম্ভাবনাময় একটি  ক্ষেত্র। আজকাল, ওয়েবসাইট এবং অ্যাপের দৌরাত্মে কারণে ওয়েব ডেভেলপারদের চাহিদা খুব বেশি এবং এটি বাড়ছে। আবার, এই ক্ষেত্রে আয় বেশ ভাল। অনেকের কাছেই অজানা এরকম সম্ভাবনাময় একটি ফিল্ডের ক্যারিয়ারের সত্যিকারের রূপটা ঠিক কেমন তা
-                                            </p>
-                                            <p class="date text-secondary mb-1">2024-12-12</p>
-                                            <p class="date text-secondary mb-1">
-                                                লেখকঃ
-                                                <span class="text-dark">Ariful Sikder (Jr.Laravel Developer)</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 mt-2 card-5">
-                                <a href="single_blog.html" class="text-decoration-none m-0 p-0">
-                                    <div class="post-card">
-                                        <div class="card-img">
-                                            <img src="asset/portrait-three-serious-students-studying-library.jpg" alt="" class="post-img mw-100 rounded">
-                                        </div>
-                                        <div class="card-content mt-2 p-2">
-                                            <h2 class="box-title h5">ইনভেন্টরি ম্যানেজমেন্ট সিস্টেম</h2>
-                                            <p class="blog-desc mt-2">
-                                                ব্যবসা প্রসারের জন্য সঠিক স্টক ম্যানেজমেন্ট অত্যন্ত গুরুত্বপূর্ণ। আপনার ব্যবসায়ে স্টকের সঠিক নির্বাচন, ক্রয়, খরচ, গ্রাহকের তথ্য, সরবরাহকারীর তথ্য, আর্থিক রিপোর্ট, লেজার, এবং হিসাবের ম্যানেজমেন্ট একটি সঠিক ইনভেন্টরি সিস্টেমের অংশ।
-                                            </p>
-                                            <p class="date text-secondary mb-1">2024-12-12</p>
-                                            <p class="date text-secondary mb-1">
-                                                লেখকঃ
-                                                <span class="text-dark">Ariful Sikder (Jr.Laravel Developer)</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-4 mt-2 card-6">
-                                <a href="single_blog.html" class="text-decoration-none m-0 p-0">
-                                    <div class="post-card">
-                                        <div class="card-img">
-                                            <img src="asset/portrait-three-serious-students-studying-library.jpg" alt="" class="post-img mw-100 rounded">
-                                        </div>
-                                        <div class="card-content mt-2 p-2">
-                                            <h2 class="box-title h5">ইনভেন্টরি ম্যানেজমেন্ট সিস্টেম</h2>
-                                            <p class="blog-desc mt-2">
-                                                ব্যবসা প্রসারের জন্য সঠিক স্টক ম্যানেজমেন্ট অত্যন্ত গুরুত্বপূর্ণ। আপনার ব্যবসায়ে স্টকের সঠিক নির্বাচন, ক্রয়, খরচ, গ্রাহকের তথ্য, সরবরাহকারীর তথ্য, আর্থিক রিপোর্ট, লেজার, এবং হিসাবের ম্যানেজমেন্ট একটি সঠিক ইনভেন্টরি সিস্টেমের অংশ।
-                                            </p>
-                                            <p class="date text-secondary mb-1">2024-12-12</p>
-                                            <p class="date text-secondary mb-1">
-                                                লেখকঃ
-                                                <span class="text-dark">Ariful Sikder (Jr.Laravel Developer)</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </div>
-                        <nav aria-label="Page navigation example" class="mt-3">
-                            <ul class="pagination justify-content-center m-0">
-                                <li class="page-item disabled">
-                                    <a
-                                        class="page-link"
-                                        href="#"
-                                        tabindex="-1"
-                                        aria-disabled="true"
-                                    >Previous</a>
-                                </li>
-                                <li class="page-item active">
-                                    <a class="page-link" href="#">1</a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">2</a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">3</a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">Next</a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <div class="col-sm-6 col-lg-4 mt-2 card-2">
+                            <a href="single_blog.html" class="text-decoration-none m-0 p-0">
+                                <div class="post-card">
+                                    <div class="card-img">
+                                        <img src="asset/blog2.png" alt="" class="post-img mw-100 rounded">
+                                    </div>
+                                    <div class="card-content mt-2 p-2">
+                                        <h2 class="box-title h5">হিউম্যান রিসোর্স ম্যানেজমেন্ট</h2>
+                                        <p class="blog-desc mt-2">
+                                            হিউম্যান রিসোর্স ম্যানেজমেন্ট সফটওয়্যার এমন একটি সফটওয়্যার, যা HR কে তার প্রতিষ্ঠানের সকল কর্মকর্তাদের নিয়োন্ত্রন করার একটি সহজ এবং গ্রহনযোগ্য উপায় দিয়ে থাকে। এই সফটওয়্যার প্রতিষ্ঠানের সকল ডকুমেন্ট পেপার ছাড়া রাখতে সক্ষম। এবং প্রতেক কর্মকর্তা তাদের
+                                            নিজেদের ড্যাশবোর্ডে কোস্পানির দেয়া আপডেট পেয়ে থাকে।
+                                        </p>
+                                        <p class="date text-secondary mb-1">2023-11-06</p>
+                                        <p class="date text-secondary mb-1">
+                                            লেখকঃ
+                                            <span class="text-dark">Ariful Sikder (Jr.Laravel Developer)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mt-2 card-3">
+                            <a href="single_blog.html" class="text-decoration-none m-0 p-0">
+                                <div class="post-card">
+                                    <div class="card-img">
+                                        <img src="asset/blog3.png" alt="" class="post-img mw-100 rounded">
+                                    </div>
+                                    <div class="card-content mt-2 p-2">
+                                        <h2 class="box-title h5">হাসপাতাল ম্যানেজমেন্ট সিস্টেম</h2>
+                                        <p class="blog-desc mt-2">
+                                            হাসপাতাল ম্যানেজমেন্ট সিস্টেম অসমৃদ্ধ সেবা প্রদানের পরিচালনা ও উন্নত করার জন্য একটি গুরুত্বপূর্ণ সরঞ্জাম। এই সিস্টেমটির সাথে দেখা যাচ্ছে এটি আপনাদের পরিচালনা ও সেবা প্রদানে সাহায্য করার জন্য বিভিন্ন বৈশিষ্ট্য আছে।
+                                        </p>
+                                        <p class="date text-secondary mb-1">2023-11-06</p>
+                                        <p class="date text-secondary mb-1">
+                                            লেখকঃ
+                                            <span class="text-dark">Ariful Sikder (Jr.Laravel Developer)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mt-2 card-4">
+                            <a href="single_blog.html" class="text-decoration-none m-0 p-0">
+                                <div class="post-card">
+                                    <div class="card-img">
+                                        <img src="asset/blog4.png" alt="" class="post-img mw-100 rounded">
+                                    </div>
+                                    <div class="card-content mt-2 p-2">
+                                        <h2 class="box-title h5">ওয়েব ডেভেলপমেন্ট ক্যারিয়ার</h2>
+                                        <p class="blog-desc mt-2">
+                                            ক্যারিয়ার হিসেবে, ওয়েব ডেভেলপমেন্ট বাংলাদেশের একটি অত্যন্ত সম্ভাবনাময় একটি ক্ষেত্র। আজকাল, ওয়েবসাইট এবং অ্যাপের দৌরাত্মে কারণে ওয়েব ডেভেলপারদের চাহিদা খুব বেশি এবং এটি বাড়ছে। আবার, এই ক্ষেত্রে আয় বেশ ভাল। অনেকের কাছেই অজানা এরকম সম্ভাবনাময় একটি
+                                            ফিল্ডের ক্যারিয়ারের সত্যিকারের রূপটা ঠিক কেমন তা
+                                        </p>
+                                        <p class="date text-secondary mb-1">2024-12-12</p>
+                                        <p class="date text-secondary mb-1">
+                                            লেখকঃ
+                                            <span class="text-dark">Wahid Hasib (Jr. Web Developer)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mt-2 card-5">
+                            <a href="single_blog.html" class="text-decoration-none m-0 p-0">
+                                <div class="post-card">
+                                    <div class="card-img">
+                                        <img src="asset/blog5.png" alt="" class="post-img mw-100 rounded">
+                                    </div>
+                                    <div class="card-content mt-2 p-2">
+                                        <h2 class="box-title h5">দেশেসেরা হসপিটাল ইউনাইটেডে চলছে ওয়েক আপ এর সফটওয়্যার </h2>
+                                        <p class="blog-desc mt-2">
+                                            মানব দেহের একটি অত্যন্ত গুরুত্বপূর্ন অর্গান সিস্টেম হার্ট ।হার্টজনিত সমস্যা গুলোর মধ্যে জটিলতর একটি অন্যতম শাখার নাম হার্ট ফেইলিউর । মানব শরীরের হার্ট ফেইলিউর জটিলতার এনালাইসিস এবং রিসার্চ কাজের সুবিধার্থে তৈরীকৃত সফটওয়্যার টির নাম হার্টকপ।
+                                        </p>
+                                        <p class="date text-secondary mb-1">2024-12-12</p>
+                                        <p class="date text-secondary mb-1">
+                                            লেখকঃ
+                                            <span class="text-dark">Ariful Sikder (Jr.Laravel Developer)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mt-2 card-6">
+                            <a href="single_blog.html" class="text-decoration-none m-0 p-0">
+                                <div class="post-card">
+                                    <div class="card-img">
+                                        <img src="asset/blog6.jpg" alt="" class="post-img mw-100 rounded">
+                                    </div>
+                                    <div class="card-content mt-2 p-2">
+                                        <h2 class="box-title h5">ওয়েব ডেভেলপমেন্ট ক্যারিয়ার</h2>
+                                        <p class="blog-desc mt-2">
+                                            ক্যারিয়ার হিসেবে, ওয়েব ডেভেলপমেন্ট বাংলাদেশের একটি অত্যন্ত সম্ভাবনাময় একটি ক্ষেত্র। আজকাল, ওয়েবসাইট এবং অ্যাপের দৌরাত্মে কারণে ওয়েব ডেভেলপারদের চাহিদা খুব বেশি এবং এটি বাড়ছে। আবার, এই ক্ষেত্রে আয় বেশ ভাল। অনেকের কাছেই অজানা এরকম সম্ভাবনাময় একটি
+                                            ফিল্ডের ক্যারিয়ারের সত্যিকারের রূপটা ঠিক কেমন তা ।
+                                        </p>
+                                        <p class="date text-secondary mb-1">2024-12-12</p>
+                                        <p class="date text-secondary mb-1">
+                                            লেখকঃ
+                                            <span class="text-dark">Ariful Sikder (Jr.Laravel Developer)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-xl-3 mt-2 d-none d-xl-block">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4 mt-2 card-1">
+                            <a href="single_blog.html" class="text-decoration-none m-0 p-0">
+                                <div class="post-card">
+                                    <div class="card-img">
+                                        <img src="asset/blog7.png" alt="" class="post-img mw-100 rounded">
+                                    </div>
+                                    <div class="card-content mt-2 p-2">
+                                        <h2 class="box-title h5">Wake Up ICT Location</h2>
+                                        <p class="blog-desc mt-2">
+                                            স্থান পরিবর্তন: ওয়েক আপ আইসিটি একাডেমি, নান্নু টাওয়ার, ৩য় তলা, পান্না চত্বর, রাজবাড়ী
+                                        </p>
+                                        <p class="date text-secondary mb-1">2024-12-12</p>
+                                        <p class="date text-secondary mb-1">
+                                            লেখকঃ
+                                            <span class="text-dark">Wahid Hasib (Jr.Web Developer)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mt-2 card-2">
+                            <a href="single_blog.html" class="text-decoration-none m-0 p-0">
+                                <div class="post-card">
+                                    <div class="card-img">
+                                        <img src="asset/blog8.jpg" alt="" class="post-img mw-100 rounded">
+                                    </div>
+                                    <div class="card-content mt-2 p-2">
+                                        <h2 class="box-title h5">Cloud80 Logo Design</h2>
+                                        <p class="blog-desc mt-2">
+                                            Cloud80 is a tech company based in the United States, they provide Salesforce development and implementation services.
+                                        </p>
+                                        <p class="date text-secondary mb-1">2024-12-12</p>
+                                        <p class="date text-secondary mb-1">
+                                            লেখকঃ
+                                            <span class="text-dark">Ariful Sikder (Jr.Laravel Developer)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mt-2 card-3">
+                            <a href="single_blog.html" class="text-decoration-none m-0 p-0">
+                                <div class="post-card">
+                                    <div class="card-img">
+                                        <img src="asset/blog9.jpg" alt="" class="post-img mw-100 rounded">
+                                    </div>
+                                    <div class="card-content mt-2 p-2">
+                                        <h2 class="box-title h5">Car Management Project</h2>
+                                        <p class="blog-desc mt-2">
+                                            Another successful deployment of our rent a car project on Franch. Dash-Car is a company that provides rent-a-car service at Franch.
+                                        </p>
+                                        <p class="date text-secondary mb-1">2024-12-12</p>
+                                        <p class="date text-secondary mb-1">
+                                            লেখকঃ
+                                            <span class="text-dark">Ariful Sikder (Jr.Laravel Developer)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mt-2 card-4">
+                            <a href="single_blog.html" class="text-decoration-none m-0 p-0">
+                                <div class="post-card">
+                                    <div class="card-img">
+                                        <img src="asset/blog10.png" alt="" class="post-img mw-100 rounded">
+                                    </div>
+                                    <div class="card-content mt-2 p-2">
+                                        <h2 class="box-title h5">Rajbari Jute Mills Visit</h2>
+                                        <p class="blog-desc mt-2">
+                                            Rajbari Jute Mill Enterprise Resource Planning (ERP) Software is one of the biggest projects of WakeUpICT. The software development team really work very hard for crafting this software.
+                                        </p>
+                                        <p class="date text-secondary mb-1">2024-12-12</p>
+                                        <p class="date text-secondary mb-1">
+                                            লেখকঃ
+                                            <span class="text-dark">Ariful Sikder (Jr.Laravel Developer)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mt-2 card-5">
+                            <a href="single_blog.html" class="text-decoration-none m-0 p-0">
+                                <div class="post-card">
+                                    <div class="card-img">
+                                        <img src="asset/blog11.jpg" alt="" class="post-img mw-100 rounded">
+                                    </div>
+                                    <div class="card-content mt-2 p-2">
+                                        <h2 class="box-title h5">Graphic design</h2>
+                                        <p class="blog-desc mt-2">
+                                            We are WakeUpIct, A prominent software firm at Rajbari. We provide quality software development for different kinds of business and freelancing training to crafting professionals in minimal time.
+                                        </p>
+                                        <p class="date text-secondary mb-1">2024-12-12</p>
+                                        <p class="date text-secondary mb-1">
+                                            লেখকঃ
+                                            <span class="text-dark">Ariful Sikder (Jr.Laravel Developer)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mt-2 card-6">
+                            <a href="single_blog.html" class="text-decoration-none m-0 p-0">
+                                <div class="post-card">
+                                    <div class="card-img">
+                                        <img src="asset/blog12.png" alt="" class="post-img mw-100 rounded">
+                                    </div>
+                                    <div class="card-content mt-2 p-2">
+                                        <h2 class="box-title h5">Microsoft Office</h2>
+                                        <p class="blog-desc mt-2">
+                                            করোনাকালীন সময়ে ঘরে বসে থেকে নিজের মূল্যবান সময় নষ্ট না করে আপনিও শিখে নিতে পারেন Microsoft Office(বেসিক কম্পিউটার ট্রেনিং কোর্স)। চাকুরী, ব্যবসা সব ক্ষেত্রে Microsoft Office এর গুরুত্ব এখন অপরিসীম।
+                                        </p>
+                                        <p class="date text-secondary mb-1">2024-12-12</p>
+                                        <p class="date text-secondary mb-1">
+                                            লেখকঃ
+                                            <span class="text-dark">Ariful Sikder (Jr.Laravel Developer)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <nav aria-label="Page navigation example" class="mt-3">
+                        <ul class="pagination justify-content-center m-0">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav> -->
+                </div>
+                <!-- <div class="col-xl-3 mt-2 d-none d-xl-block">
                         <div id="category_sec" class="shadow-lg rounded">
                             <h3 class="category-title ms-1">Categories</h3>
                             <div class="card p-2">
@@ -288,42 +427,42 @@
                                 <a href="#" class="btn btn-success text-start mt-1">Cox's Bazar Tour</a>
                             </div>
                         </div>
+                    </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- contact us section -->
+    <section id="contact_us">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h2 class="contact-title text-light fw-bold text-center">Get In Touch</h2>
+                    <p class="text fs-5 text-light text-center">
+                        If you need any kind of Information please feel free to Contact with us.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-success contact-btn">Contact Us</a>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- contact us section -->
-        <section id="contact_us">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <h2 class="contact-title text-light fw-bold text-center">Get In Touch</h2>
-                        <p class="text fs-5 text-light text-center">
-                            If you need any kind of Information please feel free to Contact with us.
-                        </p>
-                        <div class="d-flex justify-content-center">
-                            <a href="#" class="btn btn-success contact-btn">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- footer section start -->
-        <footer id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
+    <!-- footer section start -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="index.html">
+                        <img src="asset/wict-logo.png" alt="" class="f_logo">
+                    </a>
+                    <p class="text-light slogan">One of the best It company all over Bangladesh.</p>
+                    <div class="social-links">
                         <a href="#">
-                            <img src="asset/wict-logo.png" alt="" class="f_logo">
+                            <i class="fa-brands fa-facebook"></i>
                         </a>
-                        <p class="text-light slogan">One of the best It company all over Bangladesh.</p>
-                        <div class="social-links">
-                            <a href="#">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-instagram"></i>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
                             </i>
                         </a>
                         <a href="#">
@@ -343,19 +482,16 @@
                     <h2 class="fw-bold text-light info">Information</h2>
                     <ul class="list-unstyled">
                         <li class="info-link link1">
-                            <a href="about.html" class="text-secondary text-decoration-none">Contact Us</a>
+                            <a href="about.html" class="text-secondary text-decoration-none">About</a>
+                        </li>
+                        <li class="info-link link1">
+                            <a href="contact.html" class="text-secondary text-decoration-none">Contact Us</a>
                         </li>
                         <li class="info-link link2">
                             <a href="courses.html" class="text-secondary text-decoration-none">All Courses</a>
                         </li>
-                        <li class="info-link link3">
-                            <a href="instructors.html" class="text-secondary text-decoration-none">Tutors</a>
-                        </li>
                         <li class="info-link link4">
                             <a href="blog.html" class="text-secondary text-decoration-none">Blog</a>
-                        </li>
-                        <li class="info-link link5">
-                            <a href="#" class="text-secondary text-decoration-none">new</a>
                         </li>
                     </ul>
                 </div>
@@ -363,17 +499,20 @@
                     <h2 class="fw-bold text-light popular">Popular Courses</h2>
                     <ul class="list-unstyled">
                         <li class="info-link link1">
-                            <a href="single-course.html" class="text-secondary text-decoration-none">Basic Computer</a>
+                            <a href="single-course-com.html" class="text-secondary text-decoration-none">Basic Computer</a>
                         </li>
                         <li class="info-link link2">
-                            <a href="single-course.html" class="text-secondary text-decoration-none">Graphics Design</a>
+                            <a href="single-course-gra.html" class="text-secondary text-decoration-none">Graphics Design</a>
                         </li>
                         <li class="info-link link3">
-                            <a href="single-course.html" class="text-secondary text-decoration-none">Digital Marketing</a>
+                            <a href="single-course-digi.html" class="text-secondary text-decoration-none">Digital Marketing</a>
                         </li>
                         <li class="info-link link4">
                             <a href="single-course.html" class="text-secondary text-decoration-none">Web Development</a>
                         </li>
+                        <!-- <li class="info-link link4">
+                            <a href="courseVideo.html" class="text-secondary text-decoration-none">Course Video</a>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -383,7 +522,8 @@
         <p class="text-light text-center m-0 py-1 bg-dark">&copy All rights reserved by Wahid Hasib</p>
     </div>
     <!-- footer section end -->
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="js/blog.js"></script>
-    </body>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+
 </html>
