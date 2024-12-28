@@ -260,8 +260,21 @@ section#comunity {
     transition: 0.3s ease-in-out;
 }
 
+.ins_1 .s-card {
+    height: 320px;
+}
+
 .s-chairman {
-    width: 300px !important;
+    width: 280px !important;
+    height: 360px !important;
+}
+
+.s-chairman .s-card-image {
+    height: 300px !important;
+}
+
+.s-chairman:hover .s-card-image {
+    height: 240px !important;
 }
 
 .s-chairman .s-card-title {
@@ -293,6 +306,10 @@ section#comunity {
 
 .s-card:hover .s-card-image {
     height: 200px;
+}
+
+.ins_1 .s-card:hover .s-card-image {
+    height: 175px;
 }
 
 .s-card-image img {

@@ -238,5 +238,31 @@ section#comunity {
     color: var(--main-clr);
 }
 
+.card-img img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.blog-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 576px) {
+    .card-img img {
+        height: 250px;
+    }
+}
+
 
 /* suggetion blog section end */
