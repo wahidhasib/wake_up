@@ -99,3 +99,18 @@ ScrollReveal().reveal("#footer .popular", {
 });
 
 // ======FOOTER ANIMATION SECTION END
+ScrollReveal().reveal(".ins-img-sec", {
+    ...scrollRevealOption,
+    opacity: 0,
+    origin: "top",
+    delay: 200,
+    scale: .5,
+});
+// right side
+ScrollReveal().reveal(".ins-content", {
+    ...scrollRevealOption,
+    opacity: 0,
+    origin: "right",
+    delay: 300,
+    scale: .5,
+});

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@500&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+
 :root {
     --main-clr: #f06c2c;
     --sec-clr: #09912018;
@@ -65,7 +66,7 @@
     font-weight: 700;
 }
 
-#search_btn>i {
+#search_btn > i {
     margin-right: 5px;
     margin-left: 5px;
     font-size: 20px;
@@ -157,33 +158,47 @@ section#comunity {
     background-color: var(--main-clr) !important;
 }
 
+.carousel-caption {
+    width: 40%;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 576px) {
+    .carousel-indicators {
+        margin: 0;
+    }
+
+    .carousel-caption {
+        width: 70%;
+        margin: auto;
+        padding: 0;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .carousel-item .caro-des {
         display: none;
     }
+
     .carousel-item h3 {
         font-size: 1.5rem !important;
     }
+
     .carousel-item .caro-offer {
         font-size: .8rem !important;
         margin: 0 !important;
         /* color: red; */
     }
+
     .carousel-item .caro-offer span {
         font-size: .9rem !important;
     }
+
     .carousel-indicators button {
         height: 5px !important;
         width: 5px !important;
     }
 }
-
-
-/* @media screen and (max-width: 992px) {
-  .caro-img {
-    height: 40vh;
-  }
-} */
 
 
 /* ============hero section end=================== */
@@ -830,8 +845,3 @@ section#comunity {
 
 
 /* ============footer section end============= */
-
-.carousel-caption {
-    width: 40%;
-    margin-left: auto;
-}
