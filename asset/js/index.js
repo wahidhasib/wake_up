@@ -24,7 +24,7 @@ var swiper = new Swiper(".mySwiper", {
 
 const scrollRevealOption = {
     mobile: false,
-    distance: "50px",
+    distance: "100px",
     origin: "bottom",
     duration: 1000,
     opacity: 0,

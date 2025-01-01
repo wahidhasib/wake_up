@@ -185,7 +185,7 @@
         height: 100%;
         width: 100%;
         position: absolute;
-        background: url(../asset/contact_bg.jpg);
+        background: url(../images/contact_bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -211,6 +211,7 @@
         transition: all 0.5s;
         user-select: none;
         color: black;
+        overflow: hidden;
     }
 
     .post-card:hover {
