@@ -212,6 +212,7 @@
         user-select: none;
         color: black;
         overflow: hidden;
+        min-height: 100%;
     }
 
     .post-card:hover {
